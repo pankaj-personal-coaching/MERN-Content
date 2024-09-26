@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links Example</title>
+    <script>
+      function clickedOnForm() {
+        if (false) {
+          document.location = "form.html";
+        } else {
+          alert("To open this link user has to be logged in!");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Links Example:</h1>
+    <!-- https://jsonplaceholder.typicode.com/users -->
+    <h2>Link on the text</h2>
+    <a href="https://jsonplaceholder.typicode.com/users" target="_blank"
+      >Users</a
+    >
+    <a href="form.html">Open Form</a>
+    <h2>Link on the Image</h2>
+    <!-- https://en.wikipedia.org/wiki/Rohit_Sharma -->
+    <a href="https://en.wikipedia.org/wiki/Rohit_Sharma">
+      <img
+        src="./images/Rohit_Gurunath_Sharma.jpg"
+        alt="Rohit Sharma"
+        width="100px"
+        height="130px"
+      />
+    </a>
+    <h2>Link on a Button</h2>
+    <button onclick="clickedOnForm()">Form</button>
+    <h2>Differnt kinds of links:</h2>
+    <h3>
+      <a
+        href="mailto:servicesedso@gmail.com"
+        title="Click here to mail the queries."
+        >Email Us</a
+      >
+    </h3>
+    <h3><a href="tel:+91-899-9233-598">Call Us</a></h3>
+    <h3>
+      <a href="images/Rohit_Gurunath_Sharma.jpg" download
+        >Download Rohit's Image</a
+      >
+    </h3>
+  </body>
+</html>

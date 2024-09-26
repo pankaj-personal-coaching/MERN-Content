@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Details Page</title>
+    <style>
+      /* Global Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+
+      body {
+        background-color: #f3f4f6;
+        color: #333;
+      }
+
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Header */
+      .header {
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      .header h1 {
+        font-size: 2.5rem;
+        color: #2c3e50;
+      }
+
+      /* User Card */
+      .user-card {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+
+      .profile-section {
+        text-align: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      .profile-section h2 {
+        margin-top: 10px;
+        font-size: 1.8rem;
+        color: #34495e;
+      }
+
+      .info-section {
+        padding: 20px;
+      }
+
+      .info-section h3 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+        color: #3498db;
+      }
+
+      .info-section p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+      }
+
+      .info-section p strong {
+        color: #2c3e50;
+      }
+
+      /* Footer */
+      .footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.9rem;
+        color: #7f8c8d;
+      }
+
+      .footer p {
+        padding: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>User Profile</h1>
+      </header>
+
+      <div class="user-card">
+        <div class="profile-section">
+          <h2>Jane Doe</h2>
+          <p><strong>Role:</strong> Software Engineer</p>
+        </div>
+
+        <div class="info-section">
+          <h3>Contact Information</h3>
+          <p><strong>Email:</strong> jane.doe@example.com</p>
+          <p><strong>Phone:</strong> +1 123 456 7890</p>
+
+          <h3>Address</h3>
+          <p>123 Main Street, Springfield, USA</p>
+
+          <h3>Personal Information</h3>
+          <p><strong>Age:</strong> 28</p>
+          <p><strong>Gender:</strong> Female</p>
+          <p><strong>Hobbies:</strong> Reading, Traveling, Photography</p>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; 2024 User Profile. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

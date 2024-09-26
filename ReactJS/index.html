@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSX example:</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      html,
+      body {
+        height: 100%;
+        line-height: 1.5;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        color: black;
+      }
+
+      .root {
+        min-height: 100%;
+        position: relative;
+      }
+
+      .header-wrapper,
+      .main-wrapper,
+      .footer-wrapper {
+        margin: auto;
+      }
+
+      .header-wrapper,
+      .main-wrapper {
+        padding: 10px;
+        margin: 2px auto;
+      }
+
+      h1 {
+        font-size: 70px;
+        font-weight: 300;
+      }
+
+      h2,
+      h3 {
+        font-weight: 300;
+      }
+
+      header {
+        background-color: #61dbfb;
+        padding: 10px;
+      }
+
+      main {
+        padding: 10px;
+        padding-bottom: 60px;
+      }
+
+      ul {
+        margin-left: 15px;
+      }
+
+      ul li {
+        list-style: none;
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        background: #6cf;
+      }
+
+      .footer-wrapper {
+        font-weight: 400;
+        text-align: center;
+        line-height: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="root"></div>
+    <!-- To add ReactJS features from CDN. -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <!-- To add React DOM features from CDN. -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <!-- To add babel features from CDN. -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      // React code: JSX, components , elements, etc...
+      // To get root element from HTML document.
+      const rootElement = document.querySelector(".root");
+      const welcomeText = "Welcome to the react session.";
+      const title = "Getting started with ReactJS.";
+      const subTitle = "Example of JSX elements.";
+      const user = {
+        firstName: "Rohit",
+        lastName: "Sharma",
+      };
+      // We can create below element because we have already added a react package.
+      // Header Element
+      const headerElement = (
+        <header className="header-wrapper">
+          <h1>{welcomeText}</h1>
+          <h2>{title}</h2>
+          <h3>{subTitle}</h3>
+        </header>
+      );
+
+      // Main Element
+      const mainContent = (
+        <main className="main-wrapper">
+          <label for="name">
+            Name:{user.firstName} {user.lastName}
+          </label>
+          <p>Pre-requisites to get started with ReactJS:</p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
+        </main>
+      );
+
+      // Footer Element
+      const footer = (
+        <footer className="footer-wrapper">
+          <p>Copyrights 2024</p>
+        </footer>
+      );
+
+      // JSX element which contains all the other elements, it is parent or a container
+      const container = (
+        <div>
+          {headerElement}
+          {mainContent}
+          {footer}
+        </div>
+      );
+
+      // We render the JSX elements using ReactDOM package.
+      // We need to used render method from react dom package to show our changes on the UI.
+      ReactDOM.render(container, rootElement);
+    </script>
+  </body>
+</html>

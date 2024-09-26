@@ -1,0 +1,25 @@
+MERN Developer:
+M: MongoDB - Database(NoSQL)
+E: ExpressJS - Framework(NodeJS applications)
+R: ReactJS/Redux - Frontend technology(SPA single page applications)
+N: NodeJS - Server side Javascript
+
+
+Layer 1: Client(ReactJS)
+Layer 2: Server(NodeJS and ExpressJS)
+Layer 3: Database(MongoDB)
+
+
+1. Javascript and its core and advanced concepts(ES6 features, Object oriented Javascript).
+   Basics of HTML and CSS.
+2. NodeJS, ExpressJS and MongoDB(CRUD Operations)
+3. ReactJS/Redux
+
+Imp Note:
+To create a node js application from scracth we have to run 'npm init' command.
+The command will create a package.json file for us, the file contains the 
+information about our NodeJS application.
+
+
+References:
+Mongoose: https://mongoosejs.com/docs/guide.html

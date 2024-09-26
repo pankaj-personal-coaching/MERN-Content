@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <script>
+      function getTableData() {
+        let mensTestRankings = [
+          {
+            position: 1,
+            team: "Australia",
+            matches: 30,
+            points: 3715,
+            ratings: 124,
+          },
+          {
+            position: 2,
+            team: "India",
+            matches: 26,
+            points: 3108,
+            ratings: 120,
+          },
+          {
+            position: 3,
+            team: "England",
+            matches: 30,
+            points: 3151,
+            ratings: 105,
+          },
+          {
+            position: 4,
+            team: "South Africa",
+            matches: 18,
+            points: 1845,
+            ratings: 103,
+          },
+          {
+            position: 5,
+            team: "New Zealand",
+            matches: 22,
+            points: 2121,
+            ratings: 96,
+          },
+          {
+            position: 6,
+            team: "Pakista",
+            matches: 17,
+            points: 1519,
+            ratings: 89,
+          },
+          {
+            position: 7,
+            team: "Sri Lanka",
+            matches: 18,
+            points: 1501,
+            ratings: 83,
+          },
+          {
+            position: 8,
+            team: "West Indies",
+            matches: 19,
+            points: 1563,
+            ratings: 82,
+          },
+          {
+            position: 9,
+            team: "Bangladesh",
+            matches: 17,
+            points: 906,
+            ratings: 53,
+          },
+          {
+            position: 10,
+            team: "Zimbabwe",
+            matches: 2,
+            points: 46,
+            ratings: 23,
+          },
+          {
+            position: 11,
+            team: "Ireland",
+            matches: 4,
+            points: 58,
+            ratings: 15,
+          },
+          {
+            position: 12,
+            team: "Afganistan",
+            matches: 3,
+            points: 0,
+            ratings: 0,
+          },
+        ];
+        let table = document.getElementById("ranking-table");
+        mensTestRankings.map((item) => {
+          let row = document.createElement("tr"); // <tr> </tr>
+          for (let key in item) {
+            let td = document.createElement("td");
+            td.innerHTML = item[key];
+            row.appendChild(td); // <tr><td>1</td></tr>
+          }
+          table.appendChild(row);
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Table Example:</h1>
+    <button onclick="getTableData()">Show</button>
+    <table id="ranking-table" style="border: 3px solid rgb(211, 19, 19); width: 500px">
+      <caption>
+        ICC Mens Test Rankings(Team)
+      </caption>
+      <tr>
+        <th>Position</th>
+        <th>Team</th>
+        <th>Matches</th>
+        <th>Points</th>
+        <th>Ratings</th>
+      </tr>
+      <!-- <tr>
+        <td>1</td>
+        <td>Australia</td>
+        <td>30</td>
+        <td>3715</td>
+        <td>124</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>India</td>
+        <td>26</td>
+        <td>3108</td>
+        <td>120</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>England</td>
+        <td>30</td>
+        <td>3115</td>
+        <td>105</td>
+      </tr> -->
+    </table>
+  </body>
+</html>

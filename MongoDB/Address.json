@@ -1,0 +1,224 @@
+[
+  {
+    "guid": "d106ffc0-9a59-4be0-88d0-fec5db290833",
+    "addressLine1": 174,
+    "street": "Lester Court",
+    "city": "Whitehaven",
+    "state": "North Dakota",
+    "pinCode": 6065,
+    "latitude": -30.094089,
+    "longitude": 20.383555
+  },
+  {
+    "guid": "d50cf59b-4012-49ff-b7e1-8b6fab320acc",
+    "addressLine1": 936,
+    "street": "Rockaway Parkway",
+    "city": "Brownsville",
+    "state": "Nebraska",
+    "pinCode": 1709,
+    "latitude": 32.517502,
+    "longitude": -4.759871
+  },
+  {
+    "guid": "5c551b74-e332-4d68-8c51-afc02def5d3f",
+    "addressLine1": 161,
+    "street": "Ocean Avenue",
+    "city": "Trona",
+    "state": "Arizona",
+    "pinCode": 2291,
+    "latitude": 69.302054,
+    "longitude": -34.605014
+  },
+  {
+    "guid": "689b26cc-e43f-4d70-a0c6-783ece3be42f",
+    "addressLine1": 969,
+    "street": "Green Street",
+    "city": "Chloride",
+    "state": "Alaska",
+    "pinCode": 8330,
+    "latitude": 36.41645,
+    "longitude": 166.861106
+  },
+  {
+    "guid": "4b89eed4-d9df-45c8-978d-d5aa3a44a671",
+    "addressLine1": 575,
+    "street": "Madeline Court",
+    "city": "Fairlee",
+    "state": "Wisconsin",
+    "pinCode": 5130,
+    "latitude": 44.422418,
+    "longitude": -50.561126
+  },
+  {
+    "guid": "3d14b854-0162-4bd8-ada0-74ad52b868aa",
+    "addressLine1": 748,
+    "street": "Rutherford Place",
+    "city": "Riverton",
+    "state": "West Virginia",
+    "pinCode": 2149,
+    "latitude": 26.729826,
+    "longitude": -117.302883
+  },
+  {
+    "guid": "e7520bc2-1a2b-48ea-86bc-f883d21835e4",
+    "addressLine1": 808,
+    "street": "Lombardy Street",
+    "city": "Cliffside",
+    "state": "Missouri",
+    "pinCode": 9156,
+    "latitude": -53.260559,
+    "longitude": 41.190287
+  },
+  {
+    "guid": "f19317e8-6822-4b08-b648-98f351724de2",
+    "addressLine1": 379,
+    "street": "Aberdeen Street",
+    "city": "Westmoreland",
+    "state": "Oregon",
+    "pinCode": 3820,
+    "latitude": 82.989583,
+    "longitude": -137.877838
+  },
+  {
+    "guid": "c7b32668-80d8-47d9-b9b6-0938f2231bef",
+    "addressLine1": 948,
+    "street": "Campus Place",
+    "city": "Bloomington",
+    "state": "Utah",
+    "pinCode": 4327,
+    "latitude": -45.965218,
+    "longitude": -41.10049
+  },
+  {
+    "guid": "c4a8f13a-42a3-4c69-a3d9-2814b7772c41",
+    "addressLine1": 126,
+    "street": "Oriental Court",
+    "city": "Stevens",
+    "state": "Kansas",
+    "pinCode": 8306,
+    "latitude": 52.255034,
+    "longitude": -81.858172
+  },
+  {
+    "guid": "9f124e97-ff51-4eb7-82e5-fdb82fd8ce38",
+    "addressLine1": 786,
+    "street": "Bushwick Court",
+    "city": "Inkerman",
+    "state": "Minnesota",
+    "pinCode": 658,
+    "latitude": -46.993806,
+    "longitude": -50.574042
+  },
+  {
+    "guid": "55721d62-068e-4cb8-bfc7-f3b2936e3ace",
+    "addressLine1": 748,
+    "street": "Kenilworth Place",
+    "city": "Kenwood",
+    "state": "Florida",
+    "pinCode": 3410,
+    "latitude": 24.455294,
+    "longitude": 157.193932
+  },
+  {
+    "guid": "977122bb-9b7b-43f3-835c-8fd882978394",
+    "addressLine1": 111,
+    "street": "Boerum Place",
+    "city": "Rutherford",
+    "state": "Arkansas",
+    "pinCode": 7047,
+    "latitude": 4.086253,
+    "longitude": 39.35061
+  },
+  {
+    "guid": "89a5dc86-d41f-4841-b361-1b31e4fd581a",
+    "addressLine1": 110,
+    "street": "Central Avenue",
+    "city": "Deputy",
+    "state": "Illinois",
+    "pinCode": 4692,
+    "latitude": 60.282833,
+    "longitude": 126.515271
+  },
+  {
+    "guid": "007f3c8e-d780-49e2-907f-9f7781017bb7",
+    "addressLine1": 191,
+    "street": "Willoughby Avenue",
+    "city": "Lemoyne",
+    "state": "Guam",
+    "pinCode": 9929,
+    "latitude": 15.162623,
+    "longitude": 147.048591
+  },
+  {
+    "guid": "8e4bfea8-6719-4e1e-bad7-b5995d0ece6a",
+    "addressLine1": 143,
+    "street": "Clara Street",
+    "city": "Adamstown",
+    "state": "Ohio",
+    "pinCode": 5978,
+    "latitude": -51.121882,
+    "longitude": -155.319829
+  },
+  {
+    "guid": "9bf1269b-35fe-4f25-9d37-4fdd0620e0ac",
+    "addressLine1": 407,
+    "street": "Herkimer Place",
+    "city": "Rockbridge",
+    "state": "Palau",
+    "pinCode": 2423,
+    "latitude": 72.35539,
+    "longitude": 72.453221
+  },
+  {
+    "guid": "1266dc75-5b89-4671-8f30-a55ef7d59029",
+    "addressLine1": 126,
+    "street": "Rodney Street",
+    "city": "Catharine",
+    "state": "Washington",
+    "pinCode": 3724,
+    "latitude": -64.877413,
+    "longitude": -51.08715
+  },
+  {
+    "guid": "aea8fefb-1ebe-46ab-87b0-c3553a2b5701",
+    "addressLine1": 849,
+    "street": "Lott Street",
+    "city": "Whitestone",
+    "state": "Mississippi",
+    "pinCode": 4857,
+    "latitude": -33.623079,
+    "longitude": 134.990385
+  },
+  {
+    "guid": "a606f01f-8d4d-45f9-af9b-4e8127c90759",
+    "addressLine1": 826,
+    "street": "Atkins Avenue",
+    "city": "Savannah",
+    "state": "Virginia",
+    "pinCode": 1168,
+    "latitude": 9.659543,
+    "longitude": -69.508918
+  },
+  {
+    "guid": "88117de8-80ee-4bdd-a8d8-9823e4e786e3",
+    "addressLine1": 726,
+    "street": "Montague Street",
+    "city": "Fidelis",
+    "state": "Delaware",
+    "pinCode": 2226,
+    "latitude": -22.182215,
+    "longitude": 120.169295
+  },
+  {
+    "guid": "8963837f-2de5-4a22-be10-071beb8c99b4",
+    "addressLine1": 327,
+    "street": "Fayette Street",
+    "city": "Bawcomville",
+    "state": "South Dakota",
+    "pinCode": 199,
+    "latitude": -8.90154,
+    "longitude": -171.248084
+  }
+]
+
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS selectors</title>
+    <style>
+      h1 {
+        color: red;
+        font-size: 50px;
+      }
+      #heading-1 {
+        background-color: aqua;
+        font-style: italic;
+      }
+      .heading {
+        width: 800px;
+      }
+      div {
+        height: 100px;
+        width: 100px;
+        background-color: aquamarine;
+      }
+
+      .div-class {
+        color: blue;
+      }
+
+      #div-1 {
+        color: brown;
+      }
+
+      table {
+        border: 2px solid blue;
+      }
+
+      table tr th {
+        color: gray;
+      }
+      table tr td {
+        color: red;
+      }
+      .div-1 .div-2 .div-3 {
+        color: red;
+      }
+
+      div ~ p {
+        background-color: burlywood;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>CSS selectors</h1>
+    <h1 id="heading-1">CSS selectors ID</h1>
+    <h1 class="heading">CSS selector Class</h1>
+    <h1 id="heading-1" class="heading">CSS selectors All(name, ID, Class)</h1> -->
+    <!-- <div id="div-1" class="div-class">Div text</div> -->
+    <h1>Combinator Selector</h1>
+    <div class="div-1">
+      <div class="div-2">
+        <div class="div-3">Some text</div>
+      </div>
+    </div>
+    <!-- <table>
+      <tr>
+        <th>Name</th>
+        <th>Id</th>
+      </tr>
+      <tr>
+        <td>Virat</td>
+        <td>18</td>
+      </tr>
+      <tr>
+        <td>Rohit</td>
+        <td>45</td>
+      </tr>
+    </table> -->
+  </body>
+</html>

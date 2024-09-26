@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Table</title>
+    <style>
+      table {
+        width: 70%;
+        height: 70%;
+        border-radius: 20px;
+        border-collapse: collapse;
+        border: 1px solid red;
+        overflow: auto;
+      }
+      th, td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #000;
+      }
+      th {
+        background-color: gray;
+      }
+      tr:hover {
+        background-color: lightgray;
+      }
+      tr:nth-child(3) {
+        background-color: lightgreen;
+        font-size: 30px;
+      }
+      tr:nth-child(odd) {
+        background-color: #d1de7d;
+      }
+      tr:nth-child(even) {
+        background-color: #81deee;
+      }
+    </style>
+    <script>
+      function getTableData() {
+        let mensTestRankings = [
+          {
+            position: 1,
+            team: "Australia",
+            matches: 30,
+            points: 3715,
+            ratings: 124,
+          },
+          {
+            position: 2,
+            team: "India",
+            matches: 26,
+            points: 3108,
+            ratings: 120,
+          },
+          {
+            position: 3,
+            team: "England",
+            matches: 30,
+            points: 3151,
+            ratings: 105,
+          },
+          {
+            position: 4,
+            team: "South Africa",
+            matches: 18,
+            points: 1845,
+            ratings: 103,
+          },
+          {
+            position: 5,
+            team: "New Zealand",
+            matches: 22,
+            points: 2121,
+            ratings: 96,
+          },
+          {
+            position: 6,
+            team: "Pakista",
+            matches: 17,
+            points: 1519,
+            ratings: 89,
+          },
+          {
+            position: 7,
+            team: "Sri Lanka",
+            matches: 18,
+            points: 1501,
+            ratings: 83,
+          },
+          {
+            position: 8,
+            team: "West Indies",
+            matches: 19,
+            points: 1563,
+            ratings: 82,
+          },
+          {
+            position: 9,
+            team: "Bangladesh",
+            matches: 17,
+            points: 906,
+            ratings: 53,
+          },
+          {
+            position: 10,
+            team: "Zimbabwe",
+            matches: 2,
+            points: 46,
+            ratings: 23,
+          },
+          {
+            position: 11,
+            team: "Ireland",
+            matches: 4,
+            points: 58,
+            ratings: 15,
+          },
+          {
+            position: 12,
+            team: "Afganistan",
+            matches: 3,
+            points: 0,
+            ratings: 0,
+          },
+        ];
+        let table = document.getElementById("ranking-table");
+        mensTestRankings.map((item) => {
+          let row = document.createElement("tr"); // <tr> </tr>
+          for (let key in item) {
+            let td = document.createElement("td");
+            td.innerHTML = item[key];
+            row.appendChild(td); // <tr><td>1</td></tr>
+          }
+          table.appendChild(row);
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Table Example:</h1>
+    <button onclick="getTableData()">Show</button>
+    <table id="ranking-table">
+      <caption>
+        ICC Mens Test Rankings(Team)
+      </caption>
+      <tr>
+        <th>Position</th>
+        <th>Team</th>
+        <th>Matches</th>
+        <th>Points</th>
+        <th>Ratings</th>
+      </tr>
+    </table>
+  </body>
+</html>

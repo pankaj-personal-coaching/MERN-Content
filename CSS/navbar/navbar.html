@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="navbar.css" />
+    <script>
+      function openNav() {
+        let element = document.getElementById("side-nav-bar");
+        if (!element.classList.contains("show")) {
+          element.classList.remove("hide");
+          element.classList.add("show");
+        }
+      }
+      function closeNav() {
+        let element = document.getElementById("side-nav-bar");
+        if (!element.classList.contains("hide")) {
+          element.classList.remove("show");
+          element.classList.add("hide");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="navbar">
+      <a
+        style="background-color: aliceblue; height: 20px"
+        href="javascript:void(0)"
+        onclick="openNav()"
+        ><img src="icons/icons8-menu-32.png" alt="sidenav"
+      /></a>
+      <a href="home.html">Home</a>
+      <a href="matches.html">Matches</a>
+      <a href="shop.html">Shop</a>
+      <a href="rankings.html">Rankings</a>
+      <a href="contact-us.html">Contact Us</a>
+      <a href="about.html">About</a>
+      <div class="dropdown">
+        <a href="">Profile</a>
+        <div class="dropdown-content">
+          <a href="">Settings</a>
+          <a href="help.html">Help</a>
+          <a href="">Configuration</a>
+          <a href="">Sign Out</a>
+        </div>
+      </div>
+    </div>
+    <div id="side-nav-bar" class="side-nav hide">
+      <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">x</a>
+      <a href="home.html">Home</a>
+      <a href="matches.html">Matches</a>
+      <a href="shop.html">Shop</a>
+      <a href="rankings.html">Rankings</a>
+      <a href="contact-us.html">Contact Us</a>
+      <a href="about.html">About</a>
+      <a class="other" href="help.html">Help</a>
+    </div>
+    <div>
+      <h1>Home</h1>
+      <div>
+        <strong>Lorem Ipsum </strong>is simply dummy text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry's standard dummy
+        text ever since the 1500s,
+        <span>when an unknown printer took a galley </span>of type and scrambled
+        it to make a type specimen book. It has survived not only five centuries
+      </div>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
+    </div>
+  </body>
+</html>

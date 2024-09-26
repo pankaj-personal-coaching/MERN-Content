@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backgrounds</title>
+    <style>
+      h1 {
+        background-color: aqua;
+      }
+      h2 {
+        background-color: antiquewhite;
+      }
+      h1 h2 {
+        font-style: italic;
+      }
+      .background {
+        height: 200px;
+        width: 200px;
+        border: 1px solid black;
+        background-color: rgba(255, 0, 0, 0.6);
+        background-image: url("../HTML/images/Rohit_Gurunath_Sharma_small.jpg");
+        background-repeat: no-repeat;
+        opacity: 0.6;
+        /*background-position: bottom right;
+        margin-bottom: 20px; */
+      }
+
+      .background-shorthand {
+        height: 200px;
+        width: 200px;
+        border: 1px solid blue;
+        background: red url("../HTML/images/Rohit_Gurunath_Sharma_small.jpg")
+          no-repeat right top;
+      }
+
+      .height-width {
+        font-size: 50px;
+        background-color: yellow;
+        width: 200%;
+      }
+      body {
+        font-size: 10px;
+      }
+
+      .div {
+        background: red url("../HTML/images/Rohit_Gurunath_Sharma_small.jpg");
+        opacity: 0.6;
+        height: 200px;
+        width: 200px;
+      }
+      div p {
+        font-size: 20px;
+        color: black !important;
+        opacity: 1 !important;
+      }
+      /* body {
+        background-image: url("../HTML/images/Rohit_Gurunath_Sharma_small.jpg");
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- <h1>Background Example h1</h1>
+    <h2>Background Example h2</h2>
+    <div class="background"></div>
+    <div class="background-shorthand"></div> -->
+    <div class="div">
+      <p>Height and Width</p>
+    </div>
+  </body>
+</html>

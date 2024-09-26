@@ -1,0 +1,91 @@
+.container {
+  width: 100%;
+}
+
+.text-content {
+  /* font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 800; */
+  /* font-variant: small-caps; */
+  font: italic small-caps bold 25px "Courier New", Courier, monospace;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  width: 100px;
+  text-align: justify;
+}
+
+.last-align {
+  width: 300px;
+  text-align-last: justify;
+}
+
+.dir-ltr {
+  direction: ltr;
+}
+.dir-rtl {
+  direction: rtl;
+}
+
+.bidi-example {
+  padding: 10px;
+  border: 1px solid black;
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  height: 100px;
+  border: 1px solid black;
+  vertical-align: middle;
+}
+
+.underline {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+.overline {
+  text-decoration-line: overline;
+  text-decoration-style: double;
+}
+.line-through {
+  text-decoration-line: line-through;
+  text-decoration-color: aqua;
+}
+.blink {
+  text-decoration: blink;
+}
+
+.shorthand {
+  text-decoration: underline dotted red;
+}
+.shorthand:hover {
+  text-decoration: none;
+}
+
+.decorate-link:hover {
+  text-decoration: none;
+}
+
+.text-shadow {
+ text-shadow: 2px 2px 5px red; 
+}
+
+.text-transform {
+  text-transform: lowercase;
+}

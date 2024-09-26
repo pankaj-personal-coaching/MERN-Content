@@ -1,0 +1,3 @@
+This is the file used for creating hash for filedata.
+This can have multiple lines.
+Like this one is the third line of the file.

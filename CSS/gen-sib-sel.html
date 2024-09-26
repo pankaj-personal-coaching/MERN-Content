@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector</title>
+    <style>
+      div ~ p {
+        background-color: aquamarine;
+      }
+      div p {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>General Sibling Selector</h1>
+    <p>This is the example of General Sibling Selector</p>
+    <p>Another section for the page</p>
+    <div>
+      <p>This is inside the div</p>
+    </div>
+    <p>This element will be selected as part of General Sibling Selector</p>
+    <span>This will be ignored</span>
+    <p>This also selected</p>
+    <div>
+      <p>This is also inside the div</p>
+    </div>
+  </body>
+</html>

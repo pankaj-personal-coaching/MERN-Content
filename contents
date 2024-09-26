@@ -1,0 +1,3094 @@
+We are going to use VS code as an editor for JS, HTML, CSS, ReactJS and NodeJS sessions.
+
+Javascript:
+
+- JS is high-level interpreted programming language.
+- JS is used to create interactive effects within web browsers.
+- It is one of the core technologies of the World Wide Web(WWW), alongside HTML and CSS.
+- JS enables dynamic content on web pages, allowing for user interactions, animations and asynchrounous operations.
+
+Key Features of JS:
+
+1.  Intergpreted Language: JS code is executed line by line by the web browsers and NodeJS,
+    without the need for prior compilation.
+2.  High-Level Launguage: JS abstracts away many of the complex details of the computer, allowing developers to write code that is easy to read and write.
+3.  Dynamic Typing: Variables in JS do not require a predefined data tyeps. The type is determined at runtime based on the variables value.
+4.  Object Oriented: JS supports object oriented programming which allows developers to create objects with properties and methods.
+5.  Event Driven: JS can handle events such as user click, key press, and mouse movements making it ideal for interactive web appplications.
+6.  First class functions: Functions in JS are treated as first class objects, meaning they can be stored in variables, passed as arguments to other functions, and returned from a functions as a value.
+7.  Asynchronous Programming: JS supports asynchronous operations, allowing for non-blocking code execution using callback functions, promises, async/await syntax.
+8.  Runs in the Browser: JS is executed within the web browsers, enabling client side scripting for enhaced user experience.
+
+Common uses of Javascript:
+
+1.  Web developement
+2.  Server side development
+3.  Mobile Development
+4.  Game Development
+5.  Desktop applications
+
+To run JS code we have different options:
+
+1. Through NodeJS using node command.
+2. Through browser console.
+3. Online JS Editor e.g JSFiddle, jsbin, etc
+4. Through Browser(Web Page)
+   - Inline script: We can add JS code to HTM L elements directly on the same line.
+   - Internal Script: We can have JS code code along with HTML and the code is wrapped into <script> tag. The internal script can be added to head or body. but it is prefered to add internal script in body tag.
+   - External Script: This is silmilar to interanal script in terms of linking. We can put the script link either in head or body tag. As a name suggest we require a js file to be included or linked to the web page or html file. we have src property of script tag where we can specify which file to be linked to the html page.
+   - Multiple External Scripts: As a name says multiple external script can add multiple js files to the HTML page. IT is similar to external script but we can link as many add js files we want.
+
+Javascript Concepts:
+
+Variables:
+
+- A Variable is a container for storing data values. e.g number, string and others.
+- We have different ways to create vriables in JS.
+- var, let and const keywords are used to create variables.
+- var:
+  - Declares a variable globally or locally to an entire function.
+  - Hoisting plays a role when we are creating variables using var keyword.
+- let:
+  - let is similar to var but is has blocked scope.
+  - Declares a blocked scope variable to the functions and expressions.
+  - let is preferred over var for most of the use cases due to its blocked scope behaviour.
+  - With let hoisting will not be executed.
+- const:
+  - It is similar to let.
+  - Declares a blocked scope local variables.
+  - The value of a variables which are created by const keyword cannot be re-assigned.
+
+Hoisting:
+
+- Hoisting is a JS mechanism where variables and function declarations are moved to the top of their containing scope during the interpretation phase, before the code execution with default value which is undefined.
+- By this mehanism we can access or use these variables before they are actually declared.
+- There are 2 types of Hoisting in JS:
+  1. Variable Hoisting.
+  2. Function Hoisting.
+
+Data Types:
+
+- Data type dedscribes the characteristics of the data.
+- There are 2 major data types we have in JS:
+  1. Primitive: Primitive data types are fundamental data types provided by JS to represent a simple value.
+     They are typically includes:
+     - Integers(Number, float)
+     - Strings(Any data under single or double quote)
+     - Boolean(true or false)
+     - Null(Empty value or no value)
+     - Undefined(a declared variable with no values)
+  2. Non-Primitive
+     - It is also known as reference data types.
+     - It is not provided by the programming languages. It is user defined.
+     - Arrays(Which holds either same or different primitive data type values as a list)
+       e.g. [123, "Pankaj", true, null, undefined]
+     - Objects(Which holds either same or different primitive data type values as in key value pair)
+       e.g {name: "Pankaj", id: 123, isEmployed: true}
+
+Numbers(Integers):
+
+- Numbers are integers and decimal values which can do all the arithmatic operations.
+- In JS number data type can hold a decimal(1,2,100, 220) or float(1.19, 0.987).
+- Arithmatic Operations: Add(+), Sub(-), Mul(\*), Div(/), etc
+- In JS we have Math Object that has different functions that can be used on number data type.
+- round(): It rounded of the floating values to the nearest number.
+- floor(): It rounding down the flaoting value.
+- ceil(): It rounding up the flaoting value.
+- min(): It return the minumum value from the list.
+- max() It returns the maximum value from the list
+- random(): It generates random number between 0 to 0.999999
+
+String:
+
+- String are texts or any combination of characters or alphanumerical values and stored in a variable.
+- We can create strings using single('), double(") or backticks(`) quotes.
+- To access characters from a string we use index.
+  e.g.
+  let str = "JAVASCRIPT";
+  Characters: J A V A S C R I P T
+  index: 0 1 2 3 4 5 6 7 8 9
+
+Strings Methods:
+
+1.  length: It returns the number of characters in a string included empty spaces.
+2.  toUpperCase(): This method changes all the characters to upper case.
+3.  toLowerCase(): This method changes all the characters to lower case.
+4.  substr(startingIndex, numberOfCharacter): This method will cut down the string. IT takes 2 parameters. 1st param will be the index from where we wanted to cut the string, And 2nd param will be the number of character should be cut out of the string.
+5.  substring(startingIndex, endIndex): It is similar to substr() except the 2nd parameter will be the end index. result will not contain character from end index.
+6.  split(): This method will splits a string at a specified place. and it converts it to array.
+7.  includes(): It takes string as parameter or argument ans checks either it is available in the string or not. If it finds it then it returns true or it return false.
+8.  concat(): This method will concat of join different strings. cancat can have multiple parameters and all those will be concatenated.
+
+Changing data type(Casting):
+
+- Casting: IT is used to convert values from one data type to another.
+  - In JS we have multiple methods to cast the data types,
+    parseInt(), parseFloat(), Number(), toString()
+  - We can use + operator to convert string into number.
+
+Checking Data Types:
+
+- To check data type of a certain variables we use typeof method.
+
+Boolean:
+
+- A boolean data type represents one of the two values:true or false.
+- The use of these data type will be clear when you start the comparison operator.
+- Any comaprison will return a boolean value which is either true or false.
+- e.g.
+  let isLightOn = true;
+  let isRaining = false;
+  let trueValue = 4 > 3;
+  let falseValue = 3 > 4;
+
+Truthy Values:
+
+- All numbers(positive or negative) are truthy except zero.
+- All String are truthy except an empty string.
+- The boolean true.
+
+Falsy Values
+
+- 0
+- null
+- undefined
+- NaN
+- Boolean False
+- '', "", ``, empty strings
+
+JS Operators:
+
+- Assignment Operators:
+  An equal sign in JS is an assignment operator, it uses to assign a variable.
+  let name = "Some name"
+
+Operator Example Same as Description
+= x = y x = y y is stored in x.
++= x+=y x = x + y x + y result is stored in x.
+-+ x-=y x = x - y x - y result is stored in x.
+_+ x_=y x = x _ y x _ y result is stored in x.
+/+ x/=y x = x / y x / y result is stored in x.
+%+ x%=y x = x % y x % y result is stored in x.
+**+ x**=y x = x \*\* y x y result is stored in x.
+
+Arithmatic Operators:
+
+- Addition(+)
+- Subtraction(-)
+- Multiplication(\*)
+- Division(/)
+- Modulus(%)
+- Exponential(\*\*)
+
+Comparision Operators:
+
+- In Programming to compare values, we use comparison operators to compare 2 values.
+- We check if a value is greater or less or equal value.
+
+Operator Name Example
+== Equal in value only: Equivalent x == y
+=== Equal in value and data type: Exact equal x === y
+!= Not Equal x != y
+
+>                  Greater than                            x > y
+>
+> < Less thant x < y
+> = Greater than or equal to x >= y
+> <= Less than ot Equal to x <= y
+
+Increamet Oerator(++)
+
+- pre-increment(++var)
+- post-increment(var++)
+
+Decreamet Oerator
+
+- pre-decrement
+- post-decrement
+
+Non-Primitive Datatypes:
+Arrays:
+
+- An array is a collection of same or different datatype and ordered and changable(Modify)
+- Arrays can store multiple values, each value in array has an index, and each index has a reference in a memory address.
+- Each value can be access by using their index. The index starts from 0 to the length -1 of an array.
+- To create an array we have 2 different ways:
+  1. Using Array Constructor:
+     let arr = new Array();
+     let arr = Array();
+  2. using square brackets([]):
+     let arr = [...values]
+
+Array Methods:
+
+1.  length:
+2.  indexOf(): To check if the item is exists in an array. if it exists it will return the index or -1;
+3.  includes(): To check if item exists in an array, if it exists it will return true or false.
+4.  join(seprator): To join array items and return as a string, join can have a param which treated as a seprator.
+5.  slice(): To cut out multiple items from an array in some range.
+    It takes 2 params: 1. Start index 2. end index(not included).
+6.  splice(): It is smilar to slice, but it adds new items to result array.
+    It takes 3 params: 1. Start index 2. number of items to be removed 3. list of items to be added to the array.
+7.  push(): This method will add a new item to end of an array.
+8.  unshift(): This method will add new item at the start of an array.
+9.  pop(): To remove item from end.
+10. shift(): To remove item from start of an array.
+11. reverse(): To reverse an array.
+12. sort(): to sort the array elements.
+
+Objects:
+
+- we can store data in objects in key value pairs.
+- Everything can be an object in JS and objects do have properties(keys) and properties can have values.
+- The order of keys are not reserved and we can create objects by using curly brackets.
+- e.g let user = { name: "Pankaj", id: 123, address: "Pune" }
+  user.company = "Company"
+- To get values from an object we have 2 ways:
+  1. By using . followed by key name, if the key name in one word. e.g. user.id.
+  2. By using square brackets and a quote. e.g. user["name"], user["first name"].
+- Objects can have object as a property and can hold data in key value pair. we can call it as nested objects.
+  e.g let user = {
+  name: "Pankaj"
+  id: 123,
+  address: {
+  city: "Pune"
+  pincode: "123456",
+  state: "MH"
+  }
+  }
+  user.address.city.
+- Objects can have functions as a property. and we can access the object properties in those functions.
+  e.g let user = {
+  name: "Pankaj",
+  id: 123,
+  getName: function () {
+  log(this.name)
+  }
+  }
+
+Object Methods:
+
+- assing(): To copy an object without modifying the existing object.
+- keys(): To get all the keys of the object in the form of array.
+- values(): To get all the values of the object in the form of array.
+- entries(): To get the keys and values from an object in the form of array.
+- hasOwnProperty(): To check if a specific key or property exists in an object.
+
+JS Scope:
+
+- Scope determines the accessibilit or visibility of variables.
+- The scope can be a current context of the variables. this context where we can access
+  certain variables and functions.
+- Type of scopes:
+  1. Global Scope: Variables declared outside of any function are in the global scope.
+     And these varaibles can be accessible from anywhere in the code.
+  2. Function Scope: Variables decalred within a functions are in the function scope.
+     These variables can be accessible within the funtion.
+  3. Block Scope: Variable that can be accessible within the nearest curly brackets.
+     These varaible can be created by using let and const keyword. they can only be accessed within the curly brackets.
+  4. Lexical Scope: Lexiccal scope (or static scope) that is determined by the
+     position of the variables, functions and blocks. Nested functions have access to variables declared in their outer scope.
+     The process of checking variable in current, outer or global scope is nothing but a lexical scope.
+  5. Window Scope: This is the highest level of scope. We can create variables in
+     in window scope without addng var, let or const keywords.
+
+Conditional Statements:
+
+- Conditional statements are used to make a decisions based on different conditions.
+- If a processing logic requires conditions to decide so,the sequential flow of the  
+   executions can be altered in 2 ways.
+  1. Conditional execution: A block of one or more statements will be executed if a
+     certain expression is true.
+  2. Repetative execution: A block of one or more statements will be executed
+     repetitively as long as expression is true.
+- Conditionals can be implemented in different ways:
+  1. if: In JS if is the keyword which is used to check if the condition is true based
+     on some expressions. If condition is true so the block of code will be executed.
+     syntax:
+     if(expression) {
+     // Block of code.
+     }
+  2. if-else: It will be working as same as if, but this will add another section
+     where condition is not satisfied then other block of code will be executed.
+     syntax:
+     if(expression) {
+     // Block of code.
+     } else {
+     // Block of code.
+     }
+  3. if-else if-else: This is similar to if-else, but it works on different or more
+     conditions.
+     if(expression) {
+     // Block of code.
+     } else if(expression2) {
+     // Block of code.
+     } else {
+     // Block of code.
+     }
+  4. switch:
+     - This is similar or alternate to if-else if-else
+     - The switch statements starts with switch keyword followed by parenthesis and
+       some cases.
+     - The cases contains block of code which will be executed if switch statements
+       matches with case.
+     - We can stop the execution of the switch case by adding break keyword.
+     - We will have a default case which will be executed if node case matches with
+       switch statement.
+       syntax:
+       switch(expression or value) {
+       case someValue:
+       // block of code;
+       break;
+       case someValue2:
+       // block of code;
+       break;
+       default:
+       // block of code
+       break;
+       }
+  5. teranary: It is similar to if-else, and it is a shorter way to write the if-else
+     statements
+     syntax:
+     (expression) ?
+     if true this part will be executed :
+     if false this part will be executed
+
+Loops:
+
+- Loops are mostly used to execute certain block of code in repetitions.
+- Lets assume we have to log numbers from 1 to 100 using console.log();
+- To impletment such task looks may take 2 to 5 line of code to log numbers from 1 to 100.
+- We have different type of loops in JS:
+  1. for loop(break and continue): The for loop is a basic loop in javascript, that
+     can perform or execute block of code in repetitions.
+     break: Break is used to interrupt the loop.
+     continue: We can use continue to skip the certain iteration.
+     syntax:
+     for(initialization, condition, increment/decrement) {
+     // Block of code going to be repeated.
+     }
+  2. while loop: While loop will execute the code untill the specified condition
+     false.
+     syntax:
+     while(condtion) {
+     // Block of code going to be repeated.
+     increment/decrement
+     }
+  3. do while loop: do while runcs the code at least for once. even the condition is
+     true or false.
+     syntax:
+     do {
+     // Block of code going to be repeated.
+     increment/decrement
+     } while(condition)
+  4. for of loop: The for of loop is very handy to use on arrays or string.
+     if we are not interested in index of an array or string then for of loop is preferred.
+  5. for in loop:The for in loop can be used with objects to get keys/properties of
+     the objects.
+  6. forEach: If we are interested in indexof an elements from array. so forEach is
+     preffered.
+     forEach can only be applied on arrays. it takes callback function.
+     The callback function takes 3 params, current element, index and a list/array.
+
+this keyword:
+
+- The this keyword in JS is a powerful and sometimes confusing feature that referes to
+  context in which a function is executed.
+- The calue can vary depending on where adn how a function is called.
+- Contexts with this keyword:
+  1. Global: this will refers to the global object(window or global). IT depends on
+     where your code is going to run. if the code runs on browser this will refers to window and if code runs on NodeJS then this will refers to Global.
+  2. Function: this will refers to global. but when we call the function then the value
+     of this will depends how or where the function gets called.
+  3. Constructor: this will refers to the new instance created by constructor.
+- Explicit binding: We can explicitly change or set the value of this using call, apply
+  and bind methods.
+  call: The first parameter of call will be the context for this inside the function.
+  2nd parameter onwards will be the arguments for the callee function.
+  apply: The first parameter of apply will be the context for this inside the function.
+  2nd parameter will be an array containing all the arguments for the callee function.
+  bind: The first parameter of bind will be the context for this inside the function.
+  Bind will return a function as value.
+
+Functions:
+
+- A function is a reusable block of code or a programming statements designed to
+  perform certain task.
+- A function can be declared by a function keyword followed by name and parenthesis().
+- A function can have different parameters(arguments) enclosed in parenthesis().
+- A fucntion can return a value or no value(void).
+- To start execution of a function or to get the retured value from the function, we
+  have to invoke(call) a function.
+- Functions can make code:
+  - clean and easy to read.
+  - reusable.
+  - easy to test.
+- A functions can be declared or created in different ways in JS:
+
+  1. Declaration Funtions: We can create a function by using function keyword and name.
+     It has a block of code to perform some tasks.
+     We can have access to arguments.
+     We can create a constructor functins by using declaration functions.
+     Characteristics of Declaration functions: Hoisting, Named Function, Reusability
+     syntax:
+     function function_name(parameters...) {
+     // function body
+     // statements
+     }
+  2. Expression Functions: We can create a anoynous function and we can assign those
+     to any variable. We can call it as named functions.
+     Characteristics of Expression functions: Not Hoisted, Can be anonymous, Assigned
+     to any variable.
+     We can have access to arguments.
+     syntax:
+     var function_name = function(parameters...) {
+     // function body
+     // statements
+     }
+  3. Anonymous Functions: These are the funcions with no name.
+  4. Arrow functions: IT provides a concise way to write a functin expressions.
+     It will not have its own this.
+     We can have implicit return with arrow functions.
+     We can have not access to arguments.
+     Differnce with normal functions:
+
+     - Syntax
+     - this context
+     - No Constructor.
+
+     syntax:
+     const function_name = () => {
+     // function body
+     // statements
+     }
+
+Default parameters:
+
+- Sometimes we pass default values to parameters, when we incoke(call) the functions
+  and if we do not pass an argument value. so the default value will be assigned to the parameter.
+- Default parameter can work with any function type.
+
+Higher order functions:
+
+- Higher order functions are functions which takes functions as a parameter or it can
+  return functions as a return value.
+- The functions which are passed as a parameter is called as callback functions.
+- This is very useful concept in functional programming and it us used to abstract
+  common patters of computation
+- in JS there are many higher order functions:
+  map, filter, reduce, some, every, etc.
+
+Callback functions:
+
+- Callback function is a kind of a higher order function.
+- Callback functions are commonly used for asynchronous operations, such as reading  
+  files, making http calls, etc..
+
+Currying a function(Returning a function):
+
+- It creates a nested inner functions with nested scope.
+- And we can return a function fron a function ehich can be already returned.
+
+Setting time functions:
+
+- We can execute some activities or tasks in certain interval of time.
+- We can schedule(wait) for sometime to start the execution of certain tasks.
+- We can do it by 2 ways:
+  1. setTimeout(): This will start execution after specified time. the first parameter
+     will be the function or task that will start execution after specified time.
+     2nd parameter will be the time in ms.
+  2. setInterval(): This will start execution after specified time, but it will execute
+     the code after every interval. untill we stops or clears the functions.
+
+Functional Programming(JS inbuilt functions):
+
+- Functional programming allows us to write shorter code, clean code, and also we can
+  solve the complex problems which can be difficult to solve by traditional way.
+- We will cover all the inbuilt method which can be applied with arrays:
+- All these functions will take callback function as a parameter.
+- We will cover below functions:
+  1. forEach(): forEach will have a callback function as a first parameter. and the
+      function will take 3 params. forEach can be used to iterate over arrays.
+      1. currentItem 2. index of current item and 3. List
+  2. map(): This method is used for iterate over an array and modify the array elements
+     map returns an array which has same number of element on which we called a map.
+     map will have a callback function as a 1st param. with below parameters:
+     1. currentItem 2. index of current item and 3. List
+  3. filter(): This method will filter out the items which fulfills the filtering condition
+      and it will return new array. 
+      filter will have a callback function as a 1st param. with below parameters:
+      1. currentItem 2. index of current item and 3. List
+  4. reduce(): It iterates over an array ans creates or returns a singular value.
+      singular value means either it is number, string, array object, etc.
+      reduce will have a callback function as a 1st param. with below parameters:
+      1. acuumulator 2. currentItem 3. index of current item and 4. List
+      and second param initial value of accumulator.
+  5. find(): Find method will search for an element which fulfills the condition.
+      and it will return the element itself. 
+      find will have a callback function as a 1st param. with below parameters:
+      1. currentItem 2. index of current item and 3. List
+  6. some(): some will return either true or false. it will return true if the condition 
+      is satisfied for at lease one element.
+      some will have a callback function as a 1st param. with below parameters:
+      1. currentItem 2. index of current item and 3. List
+  7. every(): It returns true if condition is satisfied for all elements.
+      some will have a callback function as a 1st param. with below parameters:
+      1. currentItem 2. index of current item and 3. List
+  8. sort(): The sort method arranges the array elements is ascending or decsending order.
+      By default sort method sorts the elements as a string.
+      It works well with strings but need to add some logic for numbers.
+  9. includes(): To check if an item exists in an array. if it exists it will return true
+      or false.
+
+
+ES6: 
+   -  ES stands for EcmaScript. so ES6 is nothing but the Ecmascript6.
+   -  ES is a standard for scripting languages including JS, JScript, CoffeeScript, etc..
+   -  It is best known as JS standard intended to ensure the interoperability of the web
+      pages.
+   -  ES6 has some features that can be used in the day to day devlopment.
+
+ES6 Features:
+   1. let and const: let and const are blocked scoped variables, Which means they are only available within the block they are declared.
+   2. Scoping(Blocked Scope)
+   3. Arraow Functions: Arrow functions provides a more concise syntax for writing
+      function expressions. They also lexically bind "this" value.
+   4. Extended parameter handling:
+      1. Default Parameter: It can allow us to set default values for function parameters.
+      2. Rest Operator(...): The rest operator(...) allows us to represent an indefinite
+         number of elements as an array.
+      3. Spread Operator(...): The spread operator(...) allows us to expand elements in an
+         array or objects
+   5. Template Literal: Template literals allow for easier string interpolation and
+      multi-line strings.
+   6. Destructuring Assignment(Arrays, Objects): Destructuring assignment allows us to
+      unpack values from array or properties from objects into distinct variables.
+   7. Modules(Import/Export): It allows us to break up your code into separate files and 
+      reuse it using import/export functiality. We can write utility functions and we can use those by using modules.
+   8. Classes:
+   9. Map/Set Data Structures (arr.map and Map is different things):
+   10. Promises: It can replace callback and have a better code practices.
+       Promises are mostly used to handle asynchronous operations. It allows us to associate handlers with an asynchronous actions eventual success or failures
+       Promises can have different states:
+       1. pending: initial state, neither success nor failure.
+       2. fulfilled(resolve): meaning that the operation was successfully completed.
+       3. rejected: IT means the operation failed.
+       Promises will have 3 methods:
+       .then(): We can handle success response
+       .catch(): We can handle errors/Exceptions
+       .finally(): It will get executed either we have success or failure. 
+
+Map/Set Data Structures:
+Set: 
+   -  Set is a collection of elements. Set can have or it contains only unique elements.
+   -  Key features:
+      1. Unique values
+      2. Any value type
+      3. size: It can return the number of elements in the set
+      4. No index based access: Set do not support direct access via indices like array.
+   - To create set we just have to create new variable with Set constructor.
+      e.g let set = new Set();
+   - To operate on set data structure we have some methods:
+      1. add: To add an element to the Set.
+      2. delete: To delete an element from Set.
+      3. has: To check if the specified element is in the Set or not.
+      4. clear: To clear the set or remove all the elements from the Set.
+
+Map:
+   -  Like we are creating objects in JS using key value pairs Map is also the key value
+      pair data structure.
+   -  It is a collection of key value pair where keys can be datatype. And Maps remember
+      the original insertion order of the keys.
+   -  Key features of Map:
+      1. Key-Value Pair
+      2. Any value type keys: Keys can be of any type, weather primitive or objects.
+      3. Ordered: Map remembers order of keys.
+      4. size: The size will return the number of key value pair in the Map.
+   -  Map hase some methods:
+      1. set: To add a new entry using key value to the map.
+      2. get: To get the value of a map property.
+      3. has: To check if the property is exists in the map or not.
+
+Difference between map and set:
+
+   Term                          Set                                 Map
+   Purpose                 To store unique values           To store key-value pairs
+   Data Structure       Similar to arrays but with unique   Similar to object but with keys
+                        values                              that can be of any type and
+                                                            maintaining insertion order.
+   Methods and Pros     add/set/has/delete/soze             set/get/has/size
+
+
+Classes:
+   -  Everything in JS is an object with its properties and methods. And classess are
+      nothing but a superset of objects. by which we can define properties and methods.
+   -  We can create objects on top of classes. and we can say classes are blueprint for a
+      objects.
+   -  We instantiate a class to create an objects. and it can be a object constructor.
+   -  A class defines attributes and the behaviour of the objects. while the objects in the
+      other hand represents a class.
+   -  Once we create a class we can create different objects on the same class. And it can
+      helps us to reduce amount of code and repetetion of the code.
+   -  To define class we have to use a keyword "class" along with name of the class and 
+      curly brackets with body of the class in it.
+   -  syntax: 
+      class className {
+         // constructor() {}
+         // Code goes here.
+         // class members(properties or methods)
+         // class methods
+      }
+      class Person {
+         constructor() {
+            // to construct object and its properties
+         }
+         getDetails() {
+            // This method can return the details about the object.
+         }
+      }
+
+      class instantiaation or to create objects.
+      To create object on classes we have to use new keyword.
+      const person = new Person();
+
+Class Constructor:
+   -  constructor is a built in method or function which comes with classes and which
+      allows us to create a blueprint for our object.
+   -  In constructor function we can specify properties of the object as a parameter.
+   -  We use this keyword to attach the constructor parameters with the class.
+   -  e.g
+      // default constructor
+      class Person {
+         constructor(){
+            this.firstName = "Sachin";
+            this.lastName = "Tendulkar";
+         }
+      }
+      let person = new Person();
+      log(person.firstName); // Sachin
+      log(person.lastName);  // Tendulkar
+
+      // parameterised constructor.
+      class Person {
+         constructor(firstName, lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+         }
+      }
+      let person = new Person("Rohit", "Sharma");
+      log(person.firstName); // Rohit
+      log(person.lastName); // Sharma
+
+Inheritance:
+   -  Using inheritance we can access all the properties and methods of parent class.
+   -  Parent class(Properties, methods) -> Child Class(Properties, methods, It can have 
+      Access to parent members).
+   -  Inheritance can help us to reduce code repetitions.
+   -  e.g We can have a Person class as a parent where a Student and an Employee can be
+      created as a child class.
+   -  To use inheritance for child classes we have to use "extends" keyword.
+   -  Child class or Derived class
+   -  Parent class or Base class
+   -  While dealing wih inheritance we have to pass values to parent class while creating
+      instance of a child class. So we use "super" method to pass all the required property values from child class to parent class.
+
+
+HTML:
+   -  HTML stands for Hyper Text Markup Language.
+   -  It is used to create web pages.
+   -  It describes the structure of the web pages and how it should look.
+   -  HTML provides some of the elements those are used combinely to create we pages.
+   -  By using multiple elements/tags we can construct a page and it can be shown on the
+      view.
+   -  Some of the types of HTML elements:
+      Labels, Textfields, Headdings, Paragraphs, Images, Tables, Buttons, etc..
+   -  All of the HTML elements will have opening and closing tags.
+      e.g <html_element_name>Content</html_element_name>
+   -  We have to create HTML files by putting .html as extension.
+
+
+Basic Structure of HTML5 page.
+   -  <!DOCTYPE html>: It defines that this document is an HTML5 document.
+      It is placed at the very beginning of an HTML page.
+   -  <html>: This is the root element of the web page.
+   -  <head>: The head tag containes the meta information of the web page.
+      e.g. Website related configurations, information about the page or website.
+      meta, title, scripts, etc..
+   -  <meta>: meta tag is used to provide metadata about the HTML document.
+      It is not displayed on the web page.
+      The information under meta ised by the browsers and search engines for various
+      purposes.
+   -  <title>: This elemetns specifies a title of a web page. And it will be shown on the
+      browsers title bar or on the browser tab.
+   -  <body>: This element defines the body of the web page. And it is a container for all
+      the visible contents of the page.
+      We can add different element to the body and those will be visible on the page.
+      e.g. Headings, Labels, Textfields, Paragraphs, Images, Tables, etc...
+
+Some of the HTML elements/tags:
+   -  Headings(h1-h6):
+      -  headings are titles or subtitles that we want to displya on the web page.
+      -  We can use heading from h1 to h6 where:
+         h1 defines the most important heading and 
+         h6 defines the least important.
+   -  Lists(ol, ul, li):
+         ul: An unordered list of items that are not in specific order, Each item in the
+             list is preceded with bullet point(.).
+         ol: An ordered list of items that are in specific order, typically displayed with 
+             numbers.
+         li: It is nothing but a list item in a list. <li> represents a single item in the
+             list.
+             we can use <li> with <ul> and <ol> both.
+   -  Labels: This element is used to add text on the page.
+   -  Block level elements:
+      -  Block level elements are typically starts at new line and pccupy the full width
+         of their parent container. 
+      -  These elements can be used to create containers and to devide the structure into
+         different containers or sections.
+      -  They create a block level structure in the HTML document and often used to
+         structure and organise the page contents.
+      -  Some of the block level elements are:
+         -  Heading(h1-h6):
+         -  Lists(ol, ul and li):
+         -  Header: 
+            -  Header tag is used to add header of the page. It is available only in HTML5.
+            -  This element represents the introductory conten, typically a group of     
+               introductory or navigations aids.
+            -  We can add header by using <header></header> tag.
+         -  Footer:
+            -  Footer tag is used to add page footer. it is available only in HTML5.
+            -  This element represents the footer for its nearest sectioning content or
+               sectioning root element.
+            -  We can add footer by using <footer></footer> tag.
+         -  Div: 
+            -  We can create div by using <div></div> tag.
+            -  It is a generic block level element or container that is commonly used to
+               group and style sections of the page content.
+            -  It has no specific semantic meaning and often used as a building block or 
+               layout structures. it is also used for styling or scripting purposes.
+         -  Paragraph(p):
+            -  We can create paragraphs using <p></p> tag.
+            -  This element represents a paragraph of a texts. It is used to structure and
+               format text contents within the document.
+         -  Section: 
+            -  It represent a standalone section of a content. and it typically comes with
+               heading of the section.
+         -  Nav:  
+            -  This element represents a section of a page that links to other pages or
+               parts within the page
+         -  Forms:
+            -  The form element is used to create a form for the users to fill the details.
+            -  It contains input fields and other elements for collecting user information.
+            -  action: It specifies the URL to which the formdata is sent when submitted.
+            -  method: It defines the HTTP method used for submitting the orm data.
+               e.g. GET, POST, PUT, DELETE, etc..
+            -  onsubmit: By using this attribute we can add a js function to handle the
+               formdata.
+            -  To create form element we have <form></form> tag.
+   -  Input elements:
+      -  By using input elements we can take input from users and can interact with user.
+      -  We have different input element ypes that can be used for different use cases.
+      -  We can validate the minimum and maximum number of characters by using minlength 
+         and maxlength attributes.
+      -  We can create input elements by using <input></input> tag and we can specify the
+         type of input by putting "type" as an attribute.
+      -  syntax: <input type="input_type">
+      -  We have different input types:
+         -  text:
+            -  This element is used to create a single line text input field where user
+               can enter text or alphanumeric characters.
+         -  password:
+            -  This is similar to text input, but it creates a password input field. where
+               input text hides with bullet point or "*".
+         -  email:
+            -  This element is specifically designed for email addresses and we can
+               include validations to ensure the valid email format is entered. 
+         -  number:
+            -  The number input type restrcits user to enter only numeric values.
+            -  We can also add attributes "min", "max" and "stpe" for defining some range. 
+         -  tel: 
+            -  This element is typically used to accept telephone numbers, and we can add
+               validations to support a specific format.
+         -  checkbox:
+            -  Checkbx type allows us to select multiple options from a list of choices.
+            -  Each checkbos is independent and can be toggled on or off.
+         -  radio:
+            -  Radio buttons are used when a user needs to select single option from list.
+            -  Unlike checkboxes, selecting one radio button deselects others from the list
+         -  date:
+            -  This element can be used to select date from a calender picker.
+            -  Its perticularly useful for capturing dates in the forms.
+         -  file:
+            -  The file element lets user to upload files from their devices.
+            -  It displays a file selection dialog when clicked.
+         -  range:
+            -  This element is used to create a slider control that allows user to select a
+               value within a specified range. 
+            -  This has different basic attributes:
+               1. min: It specifies the minimum value of the range.
+               2. max: It specifies the maximun value of the range.
+               3. value: It specifies the initial value of the slider.
+               4. step: It specifies the incr/decr step when the slider thumb is moved.
+         -  url:
+            -  This element is used to capture URL input and we can add someof the basic
+               validations to entered value.
+         -  color:
+            -  This element shows the color picker where user can select color from it.
+         -  time:
+            -  This element allows user to pick time from time picker.
+         -  search:
+            -  This element is similar to text but we can add search functianality over
+               normal text.
+            -  This element is styled accordingly by browsers.
+         -  submit:
+            -  This input type creates a button and when clickes it submits the form data.
+            -  Submit type buttons mostly used with forms.
+         -  button:
+            -  Unlike submit, this creates a generic button that can be used for various 
+               purposes. such as triggering a JS fucntion or an event.
+         -  reset:
+            -  This is typically used with forms where when clicked it resets all the form
+               fields to the initial values.
+   -  Textarea:
+      -  This tag is used to create multi-line text input field in forms.
+      -  Users can enter larger amount of texts. such as comments, messages, discriptions
+         addresses, etc.
+      -  To create textarea we have <textarea></textarea>
+      -  This element has some basic attributes:
+         1. rows: It specifies the visible number of lines.
+         2. cols: It specifies the visible number of characters.
+         3. maxlength: It specifies the maximum number os characters allowed in textarea.
+   -  Links(Hyperlinks):
+      -  Links are found in nearlly all the web pages or websites.
+      -  Links allows users to click their way from page to page.
+      -  Links does not have to be text always. A link can be an image or any other HTML 
+         elements.
+      -  We can create links by using anchor<a></a> tag.
+      -  <a> tag have most important attribute which is "href" Which indicates the link
+         destination.
+      -  Links can have different attributes:
+         href: It specifies the link of destination or where we wnatedd to navigate,
+         target: It has different values and their uses, one of the use is to open the 
+         destination in new tab.
+            1. _self: This is default and the link will be opened in the ame tab.
+            2. _blank: It opens the link in new tab.
+            3. _parent: It opens the link in the parent frame.
+            4. _top: It opens the link in the full body of the page.
+         title: It shows additional informmation about the link.
+      -  Absolute URL vs Relative URL: Absolute URL's are the links of a full websites or 
+         web pages, where relative URL's are the local links(A link to a page within the same website).
+      -  We can create button as a link to navigate to different pages. To add more
+         functionality on button links we can add some JS code to specify what happens at
+         certain events such as click of a button.
+   -  Button:
+      -  The button element is used to create clickable buttons.
+      -  It has opening and closing tags and the Text or content inside the button tags
+         that represents the button label.
+      -  Button element has different types:
+         1. button: This is default type that creates a button for us.
+         2. submit: This type generally used with forms to submit the form data.
+         3. reset: This is also used with forms to reset form values to initial values.
+   -  Select:
+      -  The select HTML element is used to create dropdown list or selection menus on the 
+         web page.
+      -  It allows users to choose one or more options from a list.
+      -  We can add the dropdown list by using <select></select> tag.
+      -  We can have predefined values added to the select by <option></option>
+      -  <optgroup>: We can group related options using this tag.
+      -  We can set the default selected value to the dropdown by using seleted attribut 
+         to the option tag.
+      -  We can add multiple as a attribute to select element. so users can select
+         multiple options from the dropdown list.
+      -  To select multiple options from the list we have to press ctrl key and select the
+         option from the list.
+   
+   -  Tables:
+      -  HTML tables allows users to arrange the data into rows and columns format.
+      -  A table in HTML consists table cells inside the rows and columns.
+      -  To create HTML tables we have <table></table> tag along with multiple other
+         elements.
+      -  <table>: This is the main container for the tables.
+      -  <captions>: This is not more likely to be used when we are creating tables. This
+         is the optional part and it provides caption or title for the tables.
+      -  <th>: IT is used to add header cells, they are typically bold and centered.
+      -  <tr>: It represents a row in the table.
+      -  <td>: It represent data cells, it contains actual content of the table.
+      -  Optionals in table:
+      -  <thead>: To group the header of the table.
+      -  <tbody>: To group body of the table.
+      -  <tfoot>: To group footer part of the table. 
+
+   -  Images:
+      -  Images can improve the design and the appearance of the web page.
+      -  Images are not technically added or inserted to the web page but these are linked
+         to web pages. and <img> tag creates a holding space for the referenced image.
+      -  Images can be added on the web page by using <img></img> tag.
+      -  <img> tag has few attribute:
+         1. src: This is most important and required attribute, which holds the path of
+            the imagge the link of the image.
+         2. alt: This holds the string value which can be replaced on the image if the 
+            image is not available at specified src.
+
+HTML Attributes:
+   -  HTML attributes proides additional information to the HTML elements.
+   -  An HTML elements can have zero or more attributes that defines the behaviour on html
+      element.
+   -  Attributes usually comes in key/value pair. e.g. id="Value"
+
+
+Extras(document(DOM)): 
+   -  getElementById("element_id"): To access HTML element in the form js object.
+   -  createElement("element_type"): To create HTML element and access all the related
+      properties and functionalities through js.
+   -  appendChild: parent.appendChild(child), here parent is nothing but an HTML element 
+      on which we wanted to add child element.
+
+
+CSS: 
+   -  CSS stands for Cascading Style Sheets.
+   -  CSS describes how HTML elements are to be displayed on the screen, paper or in 
+      other media.
+   -  CSS saves a lot of work, and it can control the layout of multiple web pages at  
+      once.
+   -  CSS can be store internally and externally by using css files.
+   -  CSS syntax: A CSS file consists of a selector and a declaration block.
+      selector: It selects the HTML element on which we wanted to add styles.
+      declaration block: one or more lines of css properties.
+      h1 {
+         color: red;
+         font-size: 50px;
+         bakground-color: grey;
+      }
+      in teh above syntax h1 is the selector and the JSON like object is the declaration block.
+   -  We can add CSS by using <style></style>
+
+How to add CSS?:
+   1. Inline CSS: 
+      -  Inline CSS can be places with the HTML element on the same place where
+         the HTML element is created.
+      -  We can add inline css by adding style attribute to HTML element. and css
+         properties can be placed as a value to the style attribute.
+      -  e.g.
+         <h1 style="color: red; font-size: 50px; bakground-color: grey;">Some Headings</h1>
+   2. Internal CSS: 
+      -  Internal CSS can be placed within the same HTML document or file.
+      -  It can be added or defined within the <style></style> tag inside <head> section
+         of the HTML document.
+      -  e.g <!DOCTYPE html>
+               <html lang="en">
+                  <head>
+                     <meta charset="UTF-8" />
+                     <title>CSS Starter Page!</title>
+                     <style>
+                        h1 {
+                           color: red;
+                           font-size: 50px;
+                           bakground-color: grey;
+                        }
+                     </style>
+                  </head>
+                  <body>
+                     <h1>CSS Starter Page!</h1>
+                  </body>
+               </html>
+
+   3. External CSS: 
+      -  We can create different .css files and add those files to HTML document.
+      -  We can use the CSS properties from 1 css file to many HTML documents. it can be
+         beneficial where we have to use same style for different pages.
+      -  With an external style sheets, we can change the look of an entire website by
+         changing just one file.
+      -  We can use <link> tag to add external css files. inside the <head> tag.
+      -  e.g <!DOCTYPE html>
+               <html lang="en">
+                  <head>
+                     <meta charset="UTF-8" />
+                     <title>CSS Starter Page!</title>
+                     <link rel="stylesheet" href="simple.css">
+                  </head>
+                  <body>
+                     <h1>CSS Starter Page!</h1>
+                  </body>
+               </html>
+
+CSS Selectors:
+   -  A selector in CSS selects the HTML element(s) we wanted to add styles.
+   -  A selector typically selects a target of a specific HTML elements.
+   -  Selectors can target HTML elements based on their type, class, ID, attributes and 
+      hierachical relationships.
+
+CSS selector categories:
+   1. Simple Selectors: Simple selectors selects HTML elements based on the name, id, 
+      class, etc.
+      Simple selectors can select HTML elements by:
+      1. Element name(h1, table, div, select, etc):
+         h1 {
+            color: red;
+            font-size: 10;
+         }
+      2. ID selector(#): To select elements by an id we have to add id attribute to
+         element.
+         #id_value {
+            background-color: blue;
+            font-style: italic;
+         }
+      3. Class Selector(.): To select elements by class, we have to add class 
+         to the HTML elements.
+         .class_name {
+            width: 400px
+         }
+      
+      If we have similar css properties in class and id so the preference will be to the id selector.
+
+   2. Combinator Selectors:
+      -  It selects elements based on the specific relationship between elements.
+      -  Descendant Selector:
+         -  It selects all the descendant elements which falls under the specified
+            element 
+         -  e.g 
+            div p {
+               color: blue;
+            }
+      -  General Sibling Selector(~):
+         -  It selects all the elements that are next to the specified element.
+         -  e.g 
+            div ~ p {
+               color: blue;
+            }
+      -  Child Selector(>):
+         -  It selects all the elements that are childresn of a specific element.
+         -  It will not select the nested childs untill the parent of nested child is
+            same as root.
+         -  e.g 
+         -  e.g 
+            div > p {
+               color: blue;
+            }
+      -  Adjacent Sibling Selector(+):
+         -  It selects an element that is directly after another specific element.
+         -  Sibling elements must have the same parent element, and adjacent means 
+            "Immediately following"
+         -  e.g
+            div + p {
+               color: blue;
+            }
+
+CSS Colors:
+   -  RGB values:
+      -  RGB stands for Red Green and Blue.
+      -  syntax: rgb(red, green, blue).
+      -  Each parameter of rgb defines the intensity of the color between 0-255.
+      -  e.g To add a red color for the element we can add rgb like:
+         rgb(255, 0, 0)
+      -  We can use rgb in following ways to form a colors:
+         red: rgb(255, 0, 0)
+         green: rgb(0, 255, 0)
+         blue: rgb(0, 0, 255)
+         black: rgb(0, 0, 0)
+         white: rgb(255, 255, 255)
+      -  rgba: This also can be used to set color properties for rgb adding to it we can
+         add "a" which is alpha and it specifies transparency.
+         The Value for alpha is number between 0 and 1
+         0 specifies fully transparent where,
+         1 specifies not at all transparent.
+
+   - HEX Values:
+      -  A hexadecimal color is specified with 6 number which is #RRGGBB.
+      -  We have to use # key tp specify we are using hex colors.
+      -  Where first 2 digit will be for red, next 2 digit for green and last 2 digit for
+         blue. RR-Red, GG-Green and BB-Blue.
+      -  The values are starts from 00 to ff(same a 0-255)
+      -  e.g If we wanted to set red color using hex we can have #ff0000 or #FF0000 #f00
+         #2b8 = #22bb88.
+         red: #ff0000
+         green: #00ff00
+         blue: #0000ff
+         black: #000000
+         white: #ffffff
+
+Opacity:
+   -  The opacity property specifies the transparency of an element.
+   -  It can take a value from 0 to 1. The lower value the more transparency.
+   -  IT can be also states that intensity of an element or colors.
+
+
+Backgrounds:
+   -  CSS background properties are used to add a background effect to the elements.
+   -  There are different ways that we can add background effects to the elements.
+   -  Those are:
+      1. background-color.
+         -  The background-color property specifies the background color of the selected
+            element.
+         -  e.g;
+            h1 {
+               background-color: red
+            }
+      2. background-image.
+         -  background-image property sets an image to use as a backgroung of an elements.
+         -  by default to cover the entire element if the image is not enough to cover
+            then the images are repeated.
+         -  e.g
+            div {
+               background-image: url(image URL)
+            }
+      3. background-repeat.
+         -  background-repeat is used to set repeat image or not.
+         -  this property repeats an image in both horizontally and vertically.
+         -  e.g,
+            div {
+               background-image: url(image URL);
+               background-repeat: repeat-x
+            }
+            repeat-x: IT will repeat image horizontally.
+            repeat-y: IT will repeat image vertically.
+            no-repeat: It will not repeat the image.
+      4. background-position:
+         -  This propety is used to specify the position of the background image.
+         -  e.g
+            div {
+               background-position: top right;
+            }
+
+      5. shorthand background(options):
+         -  This is the shorthand to add background properties in one declaration.
+         -  That means we can add color or image or both using the shorthand.
+         -  e.g.
+            h1 {
+               background-color: red;
+               background-image: url(image URL);
+               background-repeat: no-repeat;
+               background-position: right top;
+            }
+            so, we can use shorthand to add all the 4 above css properties by:
+            h1 {
+               background: red url(image URL) no-repeat right top
+            }
+
+Height and Width:
+   -  In Css height and width properties are used to set the dimensions of an elements.
+   -  The properties can be specified using various units or values(px, em, rem, %, vh
+      and vw).
+   -  px: pixel
+      em: This value will depend on font size which is applied to the element. if font size is 10 for the text and we set em as a unit the the value would be 10px.
+      1em = 10px;
+      2em = 20px; 
+      rem: This is similar to the em but the different it will get the forn size of the root element.
+      %: This will use the parent element's available width and applying the % out of it.
+      vh: viewport height.
+      vw: viewport width.
+
+
+CSS Borders:
+   -  The CSS border properties allow us to specify the style, width and color of the
+      border for a specified elements.
+   -  We have different border properties:
+      -  style(border-style)
+      -  width(border-width)
+      -  color(border-color)
+      -  sides(border-[side]), side: top, bottom, left or right.
+      -  shorthand(border)
+      -  rounder(border-radius)
+   CSS border styles:
+      -  The border-style propertye specifies what kind of border to display.
+      -  The following vaalues are allowed for border styles:
+         1. dotted: This defines the dotted border to specified element.
+         2. dashed: This defines the dashed border to specified element.
+         3. solid: This defines the solid border to specified element.
+         4. double: This defines the double lines as a border to specified element.
+         5. groove: It specifies a 3D grooved border, The effect depends on border color.
+         6. ridge: It specifies a 3D ridge border, The effect depends on border color.
+         7. inset: It specifies a 3D inset border, The effect depends on border color.
+         8. outset: It specifies a 3D outset border, The effect depends on border color.
+         9. none: It defines no border to be applied to the element.
+         10.hidden: It hides the border.
+      -  The border-style property can have from one to four values for sides
+         top border, right border, bottom border, left border.
+   CSS border width:
+      -  The border-width property specifies the width of the four border.
+      -  The width can be set as a specific size(in px, pt, cm, em, etc..)
+      -  We can also set the border width by using one of the predefined values:
+         thick, medium or thin.
+      -  The border-width can have one or more values that will specify the sides and
+         width to those sides.
+      -  These sides can be top, right, bottom and left.
+      -  e.g.
+         1. If we have single value, so it will applies to all 4 sides as:
+            border-width: 5px;
+            top = 5px, right = 5px, bottom = 5px and left = 5px.
+         2. If we have 2 values, so it will applies to all 4 sides as:
+            border-width: 5px 10px;
+            top = 5px, right = 10px, bottom = 5px and left = 10px.
+         3. If we have 3 values, so it will applies to all 4 sides as:
+            border-width: 5px 10px 15px;
+            top = 5px, right = 10px, bottom = 15px and left = 10px.
+         2. If we have 4 values, so it will applies to all 4 sides as:
+            border-width: 5px 10px 15px 20px;
+            top = 5px, right = 10px, bottom = 15px and left = 20px.
+      Note: The sequence of the border applies is 
+         top->right->bottom->left
+   CSS border color:
+      -  The border color property is used to set the color of the four borders.
+      -  The value for this property can be: name of the color, HEX, RGB, transparent,etc.
+      -  If the border-color is not set, it will be inherited from the parent element.
+      -  We can also set the different color for all four sides.
+      -  We can set different color as:
+         border-color: red blue green yellow
+   CSS border sides:
+      -  We can set borders to each side by using css border sides.
+      -  We have four sides to set borders like the previous examples.
+         top, right, bottom and left.
+      -  We can set border style, width and color to specific side.
+      -  We can use following syntaax to set these at once:
+         border-[side]-[type]: value;
+         border-top-style: solid;
+         side = [top, right, bottom and left]
+         type = [style, width and color]
+   CSS Shorthand Property:
+      -  Like we saw in the previous examples, there are many properties to conside when
+         dealing with borders.
+      -  To shorten the code, it is also possible to specify all the individual border
+         properties in one property.
+      -  The border property is shorthand property for the individual border properties.
+      -  So we can set border-style, border-width and border-color at once by using
+         border shorthand css property.
+      -  syntax:
+         border: width style color.
+         e.g.
+         border: 1px solid red;
+   CSS Rounded borders:
+      - To show rounded borders to the element we have to use border-radius property.
+
+CSS Margin:
+   -  CSS Margin is a property that controls the space around the elements.
+   -  It defines the empty space outside the border of an elements. It creates separation
+      between elements on the web page.
+   -  Margin property can have different calues to adjust the spacing in various ways.
+   -  There are properties for setting margin for each side of an element.
+      1. margin-top
+      2. margin-right
+      3. margin-bottom
+      4. margin-left
+      5. margin(shorthand for sides)
+   -  All the margin properties can have following values:
+      1. auto: The browser calculates the margin for an element.
+      2. length: Specifies the margin value in px, pt, cm, etc..
+      3. %: IT specifies a margin in % of the width of contianing element.
+   -  Margin shorthand property:
+      margin: top right bottom left.
+      e.g.
+      margin: 5px 10px 15px 20px;(top=5px, right=10px, bottom=15px and left=20px)
+      margin: 5px 10px 15px;(top=5px, right=10px, bottom=15px and left=auto/0px)
+      margin: 5px 10px;(top=5px, right=10px, bottom=5px and left=10px)
+      margin: 5px;(top=5px, right=5px, bottom=5px and left=5px)
+
+CSS Padding:
+   -  CSS Padding is a property that controls the space between content and its border.
+   -  It adds a space inside the element, pushing the content away from the borders.
+   -  Padding property can have different values to adjust the spacing in various ways.
+   -  There are properties for setting padding for each side of an element:
+      1. padding-top
+      2. padding-right
+      3. padding-bottom
+      4. padding-left
+   -  All the padding properties can have forllowing values.
+      1. auto: The browser calculates the padding for an element.
+      2. length: Specifies the margin value in px, pt, cm, etc..
+      3. %: IT specifies a padding in % of the width of contianing element.
+   -  Padding shorthand property:
+      padding: top right bottom left.
+      e.g.
+      padding: 5px 10px 15px 20px;(top=5px, right=10px, bottom=15px and left=20px)
+      padding: 5px 10px 15px;(top=5px, right=10px, bottom=15px and left=auto/0px)
+      padding: 5px 10px;(top=5px, right=10px, bottom=5px and left=10px)
+      padding: 5px;(top=5px, right=5px, bottom=5px and left=5px)
+
+CSS Box Model:
+   -  The CSS box model is a fundamental concept in web design and layout.
+   -  It describes how the elements on a webpage are structured and how their dimensions
+      are calculated.
+   -  The box model comprises the following parts:
+      1. Content: The actual content or data or views of the box, where text and images
+         appear.
+      2. Padding: The space between the content and the border. Padding is inside the
+         border.
+      3. Border: The edge of the box, surrounding the padding and content.
+      4. Margin: The space outside the border, which separate the box from other elements.
+   -  box-sizing: By default the height and width properties includes only the content
+      area.
+      Padding, borders and margin are added to the outside of these dimensions.
+      We can change this behaviour using the box-sizing property.
+
+CSS Outline:
+   -  CSS outline is a line drawn outside the elements border edge.
+   -  Outlines are similar to borders but diffr in some key ways.
+   -  Outlines do not take up space(they do not affect the layout of the document), and
+      they can be non-rectangular.
+   -  Outlines have some properties:
+      1. outline-style: Sets the style(e.g. solid, dashed, dotted, etc)
+      2. outline-color: Sets the color for the outline
+      3. outline-width: Sets the width of the ouline
+      4. outline-offeset: Sets the space between the border edge and the outline.
+   -  Shorthand property:
+      The outline shorthand property allows to set the outline-style, outline-color and
+      outline-width in a single declaration.
+   -  outline-style has similar values like border which are:
+      solid, dashed, dotted, double, groove, ridge, inset, outset and none.
+   -  outline-color can be set as same as borders and it can have values like rgb, hex,
+      color name, etc..
+   -  outline-width can have similar prdefined values like borders which are thick, thin
+      and medium. and also can be set to specific length in px, cm, em, etc.
+   -  outline-offset can alos have values in length that would be in cm, px, em, etc.
+
+CSS Texts:
+   -  CSS texts has lot of properties for formatting, Structuring texts.
+   -  CSS provides a variety of properties to style texts, allowing us to control the 
+      appearance, allignment, spacing and decoration of text content.
+   -  We can perform different operations or styles to text as:
+      1. Apply fonts(font family, font size and weight, font styles, etc.): 
+         -  If we apply fonts to the text so the appearance of the text can be seen   
+            differently.
+         -  font: It is a shorthand property for applying font related stuff to the text.
+         -  The sequence of font property would be:
+         -  font-style font-variant font-weight font-size line-height and font-family.
+      2. Color: 
+         -  color property is ised to set the color of the text and the values for 
+            color would from css colors(RGB, RGBA, HEX, etc).
+         -  We can also set background color as well. we can use background-color
+            property to set it.
+      3. Text Alignment: 
+         -  This specifies the horizontal alignment of the text. The value would be left, 
+            right, center and justify.
+         -  text-align: This property is used to set the horizontal alignment of a text.
+            The values for this would be left, right, center and justify.
+         -  text-align-last: This property will deal with the last line of the paragraph
+            or text.
+         -  direction: This property is used to set the text direction of an element.
+            This property can be particularly useful for creating web content that supports bot left-to-right and right-to-left languages.
+         -  unicode-bidi: The direction and unicode-bidi properties works together to
+            handle text direction. 
+            This property is used in conjunction with direction property to set or return weather a text should be overridden to support multiple languages in a single document.
+            normal: The default value. it will not add any special handling for bidirectional text.
+            embed: It makes the elements text direction isolated from the surrounding text.
+            bidi-override: The inline text direction within the elemetn is overridden to be consistent with elements direction. 
+         -  vertical-align:
+            -  Vertical alignment in CSS can be a bit tricky because it depends on the
+               context in which we are trying to align texts.
+            -  It depends on the texts weather it is within the inline elements or table
+               cells or block-level elements.
+            -  We use vertical-align property to place text on either top, middle or
+               bottom.
+      4. Text Decoration: This property is used to set or return decorations added to the
+         text.
+         These decorations includes underlines, overlins, line-through and blicking effects.
+         text-decoration is the shorthand to set multiple text decorations at once.
+         1. text-decoration-line: It specifies the type os text decoration use
+            (underline, overline, line-through, blink, etc.)
+            IT has different values:
+            none: No text decoration
+            underline: It adds underline to the text.
+            overline: IT adds a line above the text.
+            line-through: IT strikes through the text.
+            blink: It blinks the text.(It is supported by modern browsers)
+         2. text-decoration-color: It specifies the color of the text decoration.
+            Any valid color value(name, RGB, RGBA, HEX, etc.).  
+         3. text-decoration-style: It specifies the style of the text decoration(solid,
+            double, dotted, dashed, etc.)
+            Values for text-decoration-styles are:
+            solid: A single solid line.
+            double: A double line
+            dotted: A dotted line
+            dashed: A dashed line
+            wavy: A wavy line
+      5. Text spacing: CSS provides properties to control text spacing, including the
+         spacce between characters, words and lines. 
+         These properties helps us to enhance readability and visual appeal of the text on a page.
+         It has different properties:
+         1. letter-spacing: The letter spacing property is used to control the space
+            between individial characters in a text.
+            The values for this proerty would be either normal or length(cm, px, em, etc)
+         2. word-spacing: This property is used to control space between words.
+            The values for this proerty would be either normal or length(cm, px, em, etc)
+         3. line-height: This property is used to control space between lines ot the
+            texts, it also known as leading.
+            The values for this proerty would be: 
+            normal: default spacing.
+            length: A fixed spacing value in(cm, px, em, etc)
+            number: A multiplier of the font size.
+            percentage: A percentage of current font size.
+         4. text-indent: This property is used to control the indentation of the first
+            line of the text in a block.
+            The values for this proerty would be either percentage or length.
+         5. white-space: This property is uded to control how white space inside and 
+            element is handled.
+            The values for this property would be:
+            normal: Collapse whitespaces and breaks line as necessary.
+            nowrap: Collapse whitespaces but does not break lines.
+            pre: It preserves whitespace and line breaks.
+            pre-line: It collapse whitespaces but preserves line breaks.
+            pre-wrap: It preserves whitespaces and line breaks, but wraps lines as
+            necessary.
+      6. Text shadow:
+         -  Using text-shadow it adds a shadow to the text.
+         -  We can specify a horizontal and vertical shadows to the text.
+         -  Text shadows will allow us to add one or more shadows to the text content of
+            an element, enhancing its visual apprearance and creating depth.
+         -  syntax:
+            text-shadow: h-shadow v-shadow blur-radius color.
+            h-shadow and v-shadow are the mandatory values.
+            blur-radius(Optional): It a blur value to the shadow. The higher the number, the more blurred the shadow will be.
+            color(Optional): The color for shadow, if not passed the color will be inherited text color.
+      7. Text Transformation:
+         -  The text-transform property is used to control the capitalization of text.
+         -  It allows us to transform text to uppercase, lowercase, capitalize first
+            letter of each word.
+         -  Syntax:
+            text-transform: value;
+            We can have different values for text-transform:
+            none: Default value. The text will not be transformed.
+            capitalize: Transform first character of each word to uppercase.
+            uppercase: Transform all characters to uppercase.
+            lowercase: Transform all characters to lowercase.
+
+CSS Links:
+   -  We can add different styles to links using different css properties.
+   -  We can inherit all the text styles to links e.g color, font, background, etc.
+   -  Additionally links can be styled differently dependng on what state links are in.
+      e.g link, visited, hover and active
+   -  When settibg styles for several link states, there are some order rules:
+      hover MUST come after link and visited and
+      active MUST come after hover.
+   -  We can styles links using several css properties to display links as boxes/buttons.
+
+CSS Tables:
+   -  We can add CSS to tables to enhance the apperance of the table and its rows and
+      columns.
+   -  We can add different styles to tables:
+      e.g borders, size, alignment, style, etc.
+   -  We can add styles to every alternate row by using nth-child css selector property.
+      It accepts 2 values: even and odd.
+
+CSS Display:
+   -  The display property in CSS is one of the most important properties as it determines
+      how elements are displayed on the webpage.
+   -  It affects the layout of the elements and how they interact with each other.
+   -  CSS display can have different values:
+      1. block: It displays an element as a blcok element.
+      2. inline: It displays an element as inline element.
+      3. inline-block: It displays an elements as an inline-level block container.
+         The element itself is inline but we can set width and height values.
+      4. contents: It makes the container disappear, making the child elements children
+         of the element next level up in the dom.
+      5. flex: It displays and element as a block level flex container.
+      6. none: It hides the element from DOM. The element is completely removed.
+
+Navigation Bar:
+   -  Creating a navigation bar(navbar) in CSS involves styling a list of typically
+      placed horizontally or vertically.
+   -  It provides multiple navigation options or we can add different pages and show them
+      by clicking on nav option.
+   -  A navigation bar is typically a list of links, and that can be navigated to other
+      pages.
+
+Dropdowns:
+   -  We can have a functionality where more options can be seen on single element.
+   -  We can see other options which are added to the dropdowns by adding an action
+      or event on the element.
+      Actions could be:
+      -  hover
+      -  click
+
+Flexbox: 
+   -  Flexbox is nothing but a layout module that helps us to design a web page smoothly.
+   -  It is a layout module tha provides a more effiecient way to design complex layouts 
+      and align items within the container.
+   -  It offers great flexibility in terms of alignment, distribution, and space
+      allocation among items within a container.
+   -  Before floxbox layout modules, there were some layout modules was present:
+      1. block: For sections or block level elements in a web page.
+      2. inline: For texts, lables, and other inline elements.
+      3. table: For 2 dimentional table data.
+      4. positioned: For explicit position of an elements.
+   -  To implement a flexbox structure we need to define containers, and inside the
+      container we can add different elements.
+   -  Key Concepts:
+      1. Flex Container: The parent element that holds items, its defined by setting the 
+         'display' property to 'flex' or 'inline-flex'.
+      2. Flex Items: The child elements of a flex container.
+   - Flex Container(Parent element):
+      -  The flex container becomes flexible by setting the display property to flex.
+      -  The flex container can have different CSS properties:
+         1. flex-direction: It defines in which direction the container wants to stack  
+            the flex items. 
+            The values for this would be: row, row-reverse, column, column-reverse, etc.
+         2. flex-wrap: It is used to specify weather the flex items should be wrapped or
+            not.
+            The values for this would be: wrap, nowrap, wrap-reverse, etc.
+         3. flex-flow: This is shorthand property to set flex-direction and flex-wrap.
+         4. justify-content: This is used to align flex items.
+            The values for this would be: center, flex-start, flex-end, baseline, etc.
+         5. align-items: This is used to align flex items.
+            The values for this would be: center, flex-start, flex-end, baseline, etc.
+         6. align-content: This is used to align the flex lines.
+            The values for this would be: space-around, space-between, stretch, center, etc.
+   -  Note: align-items property aligns flex items along the cross axis(perpendicular to
+            the main axis) or We can say horizontally.
+            justify-content aligns the flex items along the main axis(the primary axis defined by flex-direction) or vertical.
+   
+   -  Flex Items(Child Elements):
+      -  The direct child elements of a flexbox cntainer automatically becomes flexibl
+         (flex) items.
+      -  The flex items can have different properties:
+         1. order: It specifies the order of the flex items.
+         2. flex-grow: It specifies how much the flex item will grow relative to the rest
+            of the items.
+         3. flex-shrink: It specifies how much the flex item will shrink relative to the
+            rest of the items.
+         4. flex-basis: It specifes the initial length of the flex items.
+         5. flex: this is the shorthand for flex-grow, flex-shrink and flex-basis.
+         6. align-self: It specifies the alignment for the selected item inside the flex
+            container. This property will override the default alignment set by the containers align-items property.
+   
+
+Database:
+   -  A database is an organized collection of data that is stored and accessed
+      electronically.
+   -  Databases are designed to manage, store, retries an manipulate data efficiently.
+   -  Databases can be used in a wide range of applications from small scale persomnal
+      projects to large scale enterprise systems.
+   -  Key concepts in Database:
+      1. Data: The actual information stored in the database, suh as Personal details,
+         Customer records, product details, sales transactions, etc..
+      2. DBMS(Database Management System): The software that interacts with the database,
+         users and applications. It provides the tool to creates, retrieve, update and manage the data in the database.
+      3. Schema: The structure or organization of the database., defining how data is
+         organized and how the relationships among data are assiciated.
+         Schema is mandator in terms of relational databases(SQL). not mandator in NoSQL.
+      4. Tables or Collections:
+         Table: It comes into relational databases. Data is organized in tabular form,
+         which consists of rows(records) and columns(fields).
+         Collection: A group of documents, similar to table is relational database.
+         Collections do not enforce a schema, and it allowing documents within the same collection to have different structures.
+      5. Queries: It is a requests to retrive or manipulate data from the database,
+         usally written in SQL(Structured Query Language) for relational databases.
+         Queries can be written for NoSQL databases too.
+
+Types of Databases:
+   -  Relational Database: It stores the data in the form of tables with rows and columns.
+      Relationships can be added to different tables too using foreign key.
+      It include: MySQL, Oracle, SQL server, PostgreSQL, etc
+   -  NoSQL Databases: It is designed to handle unstructured or semi-structured data.
+      They include various type like document databases, key-value stores, column-family stores and graph database.
+      It includes: MongoDB, Redis, Cassandra and Neo4j, etc.
+   -  In-Memory Databases: It stores data in the main memory(RAM) rather than disk.
+      These databases are faster then any other type of databases.
+      It includes: Redis and memcached.
+   -  Object-Oriented Databases: It stores data in the form of objects, as used in
+      object-oriented programming.
+      It includes: db4o and ObjectDB.
+
+We are creating databases to store data about the entities:
+And entities can be a Person, Customer, Product, Order, Adrresses, etc.
+
+
+MongoDB(NOSQL):
+   -  MongoDB is a popular NoSQL database designed for scalability, flexibility, and ease
+      of use.
+   -  It stores data in a flexible, JSON-like format called BSON(Binary JSON), which
+      allows for the storage of complex data structures and unstructures data.
+   -  MongoDB is well-suited for applications that requires high performance, high
+      availability, and horizontal scalibility.
+   -  MongoDB is a flexible, scalable NoSQL database that uses documents to store data.
+      It provides powerful features for managing and quering data including flexible schemas, indexing and aggregation.
+   -  It also used for applications that requires rapid developement and handling of 
+      diverse data types.
+
+Key Concepts in MongoDB:
+   1. Document: The basic unit of data in MongoDB, similar to row in relational database.
+      And every document contains a data related to the entity. Documents are stored in BSON formata and can have a flexible schema.
+      e.g 
+      {
+         "_id": "ObjectId('507f1f77bcf86cd799439011')",
+         "name": "John Doe",
+         "email": "johndoe@example.com",
+         "age": 29,
+         "address": {
+            "street": "123 Main St",
+            "city": "Springfield",
+            "state": "IL",
+            "zip": "62701"
+         },
+         "interests": ["reading", "hiking", "coding"]
+      }
+   2. Collection: A group of documents, similar to table in relational databse.
+      Collections do not enforce a schema, allowing documents within the same collection to have different structures.
+      e.g users, products, customers, etc.
+   3. Database: A container for collections, A mongodb can have multiple databases.
+   4. MongoDB Query Language(MQL): The language 'used to interact with MongoDB. it includes operations for creating, reading, updating, and deleting data, as well as aggregations an d indexing.
+
+Step-By-Step Installation of MongoDB:
+   1. Download MongoDB:
+      -  Visit the https://www.mongodb.com/try/download/community 
+      -  Select appropriate version.
+   2. Install MongoDB:
+      -  Run the downloaded .msi installer.
+      -  Follow the installation wizard steps. and During the setup, select the complete 
+         installation.
+      -  Ensure that "Install MongodB as a Service is checked. This will automatically start mongoDB as a windows service.
+   3. Set Up the Environment:
+      -  By default MongoDB is installed in 
+         "C:\Program files\MongoDB\Server\<version>".
+      -  Add the MongoDB bin directory e.g
+         "C:\Program files\MongoDB\Server\<version>\bin" to the system PATH environement variable to use "mongod" and "mongo" commands from the command line.
+   4. Create Data Directory:
+      -  MongoDB stores data in the \data\db directory by default. Create this directory.
+         mkdir C:\data\db
+   5. Run MongoDB:
+      -  Open command prompt and start the mongodb server:
+         mongod
+   6. Connect to MongoDB:
+      -  Download and install mongosh from:
+         https://www.mongodb.com/docs/mongodb-shell/
+      -  Extract all the files from zip somewhere in the machine.
+      -  Open mongosh-2.2.12-win32-x64\mongosh-2.2.12-win32-x64\bin
+      -  and open mongosh.exe
+
+
+Data Modeling:
+   -  Data modeling in mongodb involves structuring the documents and collections in a way
+      that efficiently stores and retrieves data.
+   -  In Relational databases we design schemas for tables, columns and relationships,
+      mongodb uses flexible, schema-less documents but having a good data modeling practice essential for performance and maintanability.
+   -  Key Concepts in Data Modeling:
+      1. Document and Collections:
+      2. Embedded Documents vs References:
+         Embedded Documents: Stores related data within a single documents or we can add nested data through embedded documents.
+         References: Store related data in separate documents and use references to link them.
+      3. Schema Design: Even though mongodb is schema less, its good practice to define a schema like mongoose(for NodeJS) to enforce consistency.
+      4. Indexes: Indexes improve query performance but can impact write performance and
+         storage.
+   -  Data Modeling Pattern:
+      -  These patterns works with different collections.
+      1. One-to-One Relationship: It specifies the relation between one document to
+         another document.
+         Lets assume we have a Person entity(collection) and currentAddress property in it. And we have a Address entity where we stores addresses. so, in one-to-one relationship we can store address reference in Person entity.
+         Note: This kind of relation can be added as embedded or references.
+      2. One-to-Many Relationship: It specifies the relation between one documents to  
+         multiple documents.
+         Lets assume we have a Person Entity and friends property in it. And the person can have many other freinds(Person Entity) and we can stores references of those friends.
+         Note: This kind of relation can be added as embedded or references.
+      3. Many-to-Many Relationship: It uses an array of references in each document to 
+         represent the relationship.
+         Lets Assume the many students can have many courses as a relationship in it.
+
+Data Modeling Process(Schema Design Process):
+   -  The schema design process helps us  to prepare an effective schema for an
+      applications.
+   -  Designing a schema may have different factors to decide:
+      1. Identify the application need.
+      2. Identify Application workload.
+      3. Map Schema relationships.
+      4. Apply design pattern(Structure).
+
+Best practices to follow for Data Modeling:
+   1. Understand your queries: Design your schema based on the types of queries your
+      application will perform. Structure data to optimize for those queries.
+   2. Use Embedded Documents for Automicity: Embed related data when it is frequently 
+      accessed together to reduce the need of multiple queries and ensure atomic operations. 
+   3. Use References for Scalability: Use references when related data is large or 
+      updated independently to avoid document growth beyond BSON size limit(16MB).
+   4. Balance Read and Write Performance: Consider the trade-off between read and write 
+      performance. Embedded can speed up reads but slow down write if embedded data changes frequently.
+   5. Leverage Indexes: Create indexes on fields that are frequently queried. Use 
+      compound indexes for queries that filter on multiple fields.
+   6. Avoid Large Arrays: Be cautious with large arrays within documents as they can 
+      impact performance. Use referencing if arrays become too large.
+   7. Schema versioning: Plan for schema changes by versioning your documents. add a   
+      version field to track schema version to handle migrations.
+
+CRUD Operations:
+   C: Create Operation
+   R: Read Operation
+   U: Update Operation
+   D: Delete Operation
+
+More on Documents:
+   -  MongoDB stores data in BSON(Binary JSON) documents. It contains more data types
+      than JSON. 
+   -  MongoDB documents are composed of field-and-value pairs(key-value pairs)
+      e.g   
+      {
+         name: "Pankaj"
+         age: 31,
+         skills: ['MongoDB', 'React', 'ExressJS', 'NodeJS],
+         currentAddress: {
+            addressLine: "Ravet",
+            city: "Pune",
+            pin: 412111
+         }
+      }
+   -  Data Types which supports MongoDB documents as BSON document. BSON is a bonary 
+      serialization format used to store documents and make CRUD on those. It Supports following data types:
+         -  Double(Number)
+         -  String
+         -  Object
+         -  Array
+         -  Binary Data
+         -  ObjectID(_id)
+         -  Boolean
+         -  Date
+         -  Null or Undefined(deprecated)
+         -  Regular Expression
+         -  DBPointer
+         -  Javascript
+         -  32-bit-integer or 64-bit-integer
+         -  Timestamp
+         -  Decimal128
+      -  Binary Data: A BSON binary value is a byte array. The value has a subtype that 
+         indicates how to interpret the binary data.
+         subtypes: Generic binary data, Function Data, UUID, Encrypted BSON values, custom data, etc...
+      -  ObjectId: ObjectIds are small, likely unique, fast to generate and ordered.
+         ObjectId values are 12 bytes in length which consists:
+            -  4-bytes timestamp, representing the objectIds creation, measured in  
+               seconds since unix(Started from 1st Jan 1970).
+            -  5-bytes random value generated once per process. This random value is
+               unique to the machine and process.
+            -  3-bytes incrementing counter, initialized to a random value.
+
+   -  Documents limitations:
+      -  Document size limit: The maximum BSON document size is 16MB. It ensures that ca single documents cannot use excessive amount of RAM or bandwidth. 
+      If it crosses the limit mongodb provides GridFS API which supports files to store the data.
+   -  Bulk Operations can be perform with all the above(CRUD) operations. 
+
+
+Create Operation:
+   -  Create or insert operations adds a new documents to a collection, if collection is
+      not exists, insert will create a new collection.
+   -  MongoDB provides the following methods to insert documents into a collection.
+      1. insertOne()
+      2. insertMany()
+   -  In MongoDB, insert operations targets a single collection. All operations ar atomic 
+      on the level of a single document.
+   -  insertOne(doc): doc is the data which we wanted to insert into the database.
+      If _id is not passed as a field in document, the mongodb will create it for the specific doc.
+      This method will return write acknowledgement and _id(Object ID) as response.
+      syntax: 
+      db.collection_name.insertOne({
+         "id": 1,
+         "brand": "HTC",
+         "model": "HTC Aria",
+         "operatingSystem": "Android 2.1, Sense UI",
+         "releaseDate": 2010,
+         "product": "Wild Boar - Tenderloin"
+      });
+   -  insertMany([doc]): This method will expect array of documents as a parameter and 
+      stores all the array documents to the collection.
+      This method will return write acknowledgement and [_id(Object ID)] as response.
+      syntax:
+      db.collection_name.insertMany([{
+         "id": 1,
+         "brand": "HTC",
+         "model": "HTC Aria",
+         "operatingSystem": "Android 2.1, Sense UI",
+         "releaseDate": 2010,
+         "product": "Wild Boar - Tenderloin"
+      }]);
+      [{"id": 2,"brand": "Lava","model": "Lava 3G 415","operatingSystem": "Android 4.2","releaseDate": 2014,"product": "Bread - Olive Dinner Roll"}, {"id": 3,"brand": "Motorola","model": "Motorola WX160","operatingSystem": "Feature phone","releaseDate": 2009,"product": "Pepper - Gypsy Pepper"}, {"id": 4,"brand": "Sony","model": "Sony Ericsson W980","operatingSystem": "Feature phone","releaseDate": 2011,"product": "Sausage - Blood Pudding"}]
+
+   -  updateOne(): It will create or insert new document if upsert options has passed
+      with true value. updateOne(query, doc, {upsert: true}).
+   -  Other methods: updateMany(), findAndModify(), findOneAndUpdate(), findOneAndReplace 
+      ().
+   -  bulkWrite(): This method is quite similar as insertMany().
+
+
+Read Operations:
+   -  Read operations retrives documents from a collection. We have to add query for a 
+      collection to get documents. MongoDB provides the find() to read documents from a collection.
+      syntax: 
+      db.collection_name.find(query);
+      query: It is the selection criteria which selects multiple documents and returns as
+         a response
+   -  To get all the records from the collections we can just call the find method
+      without pasing any query.
+   -  We can have different query criterias depend on the requirements.
+      To get all docs: db.collection_name.find();
+      To get specific: db.collection_name.find(query); // query = {name: "Pankaj"}
+      To get multiple by specific criteria(Array): 
+         db.collection_name.find({skills: { $in: ['NodeJS'] } })
+      To add multiple check or criteria we use $and operator:
+         db.collection_name.find({name: "Pankaj", skills: $in: ["NodeJS"]})
+         db.collection_name.find($and: [{name: "Pankaj"},{skills: { $in: ["NodeJS"] }}])
+      To check or condition we use $or operator:
+      db.collection_name.find($or: [{name: "Pankaj"},{skills: { $in: ["NodeJS"] }}])
+      We can use combination of $or and $and to match the selection criteria.
+      We can also add queries to embedded documents as well.
+      We have different method to retrive data from MongoDB which are:
+         db.collection_name.findOne(): which return single document.
+         db.collection_name.aggregate(): We can add different aggregations to get docs.
+      
+   -  We can project or fetch the specific fields from documents by passing second
+      parameter to find function. And to get specific properties from doc we called it as projection.
+      syntax: 
+         db.col_name.find(query, projection).
+         projection is the object which consists all the properties/keys we wanted to get as response by setting 1 as a value, and if we pass 0 as value it will neglect those properties from response.
+         by default 0 is for every fields except _id.
+   -  Query for Combination of $and and $or:
+      {
+         $and: [
+            {  isActive: true },
+            {  $or: [
+                  { age: { $gt: 25 } },
+                  { gender: 'male' }
+               ]
+            }
+         ]
+      }
+
+
+Aggregate method:
+   -  The aggregation framework is a powerful tool for data processing and transformation 
+      within a collection.
+   -  It allows us to perform complex data manipulations and aggregations using a pipeline
+      approach.
+   -  The pipeline consists for multiple stages, each stage is performing a specific 
+      operationon the data, transforming it step by step.
+   -  Stages of aggregation pipeline:
+      1. $match: It is a query to fileter documents based on specified criteria.
+      2. $group: It groups documents by a specified key and performs aggregations on them.
+      3. $project: It including, excluding or adding fields from the docs.
+      4. $sort: It sorts documents based on specified field.
+      5. $limit: It limits the no. of docs passed to the next stage.
+      6. $skip: It skips a specified number of documents.
+      7. $unwind: Deconstructs the array resulting from the join, so each order has a 
+         single details about the doc.
+      8. $lookup: Performs a left outer join with another collection. It gets the data 
+         from different collection where the value of localField and foreignField matches.
+         $lookup will need different properties such as:
+            1: from: This field says what other collection we have to use to get the data.
+            2. localField: This is the field of current collection whic will be matched 
+               to the other collection
+            3. foreignField: This field will be in the other collection which will have
+               the value matches to localField.
+            4. as: The value of this will be added as aproperty to the result document 
+               and it will have the value of other doc.
+
+   $group:
+   db.Person.aggregate([
+      {$match: {age: { $gt: 20 }}},
+      {$group: {_id: "$gender", count: {$sum: 1}, people: { $push: { name: "$name", age: "$age", gender: "$gender", email: "$email"}} }}
+   ])
+
+   $lookup:
+   db.Person.aggregate([
+      {$match: {age: { $gt:  25 } }},
+      {$project: {_id: 0, name:1, age:1, gender: 1, currentAddress:1, }}, 
+      {$lookup: { from: "Address", localField: "currentAddress", foreignField: "guid", as: "curAddressDetails"}}, 
+      {$unwind: "$curAddressDetails"}
+   ])
+
+   Delete Operations:
+   -  MongoDB provides various methods to delete the documents.
+      1. deleteOne: It deletes a single document that matches the filter criteria.
+      2. deleteMany: Deletes all the documents which matches the filter criteria.
+      3. findOneAndDelete: It finds and deletes a single document and it also returns 
+         that as a response.
+
+   -  We can also have an feature to delete records as an application level but it will 
+      be there in database. So we can go with soft-delete feature.
+      we can add isDeleted property to every document as part of default field with value false. and as soon as the delete document function gets trigger we can just update that field to true.
+
+   Update Operations:
+      -  Update operations modify existing documents in a collection. MongoDB provides 
+         following methods to update docs in a collection.
+         1. updateOne: It updates a single doc based on a selection criteria(query).
+            syntax: db.col_name.updateOne(query, updatedDoc, options)
+            options: 
+            upsert<boolean>: It creates a new doc if no documents matches the query if the value for this is true, and if it is false it will just update the doc if query matches for any.
+            It will return:
+            matchedCount: The number of matched documents.
+            modifiedCount: The number of modified documents.
+            upsertedId: _id of the upserted doc.
+            upsertedCount: The number of upserted documents.
+            acknowledged: boolean true if the update successful. 
+         2. updateMany: It is similar to updateOne but it updates or modify all the 
+            documents which matches the query.
+            syntax: db.col_name.updateMany(query, updatedDoc, options)
+         3. replaceOne: IT replaces the single document within the collection based on 
+            filter criteria.
+            syntax: db.col_name.replaceOne(query, replacementDoc, options)
+            replacementDoc: It is the document that will be replaced in a col based on filter.
+
+   Note: Delete operations are very crucials because we are removing a part of the system which can be further needed to the application.  
+
+   Note: Update operations are also the crucial one so please check all the requirements carefully when dealing with such operations. 
+mongodb commands:
+   1. use db_name: This command will create new database.
+   2. show collections: IT shows all the collections which are there in the selected
+      database.
+   3. to check greater than and less than condtion we have $gt and $lt operators resp.
+      syntax: db.col_name.find({field_name: { $lt: value }})
+      filed name = actual field name in document.
+      value = the condition criteria. 
+   4. $in: This operator is used to mathc the values in arrays. if one of the element is
+      matched with the doc value so those documents will be returned.
+      The $in operator selects the documents where the value of a field equals any value in the specified array.
+      We use $in specifically with arrays.
+   5. $and: We use $and operator to join conditions. A document must satisfy all the 
+      specified conditions in $and array to be included in the result set.
+      syntax: 
+      db.col_name.find({$and: [cond1, cond2,...]})
+   6. count(): We use this method to get the exact count of result set which will be   
+      returned as find() result.
+   7. $or: We use $or to check any condition should be satisfied out of the array which 
+      will be passed as a value to $or operator.
+   8. skip(n): This method is used for paginations through the results of a query. skip 
+      will skip first n documents.
+   9. limit(n): This method is used for paginations through the results of a query. limit 
+      will limits the query to return n documents.
+   10. $set: Adds new fields to documents. $set outputs dosuments that contain all exisitng fields from input documents, and newly added fields.
+   11. $unset: It removes/excludes fields from documents.
+      To remove a single field $unset takes a string that specifies the field to remove.
+      To remove multiple, $unset takes an array of fields to remove.
+      $unset and $projects similarities:
+         { $project: { "field_1": 0, "field_2": 0, "field_3": 0 } }
+      similar can ba written using $unset:
+         { $unset: "field_1" }
+         { $unset: ["field_1", "field_2", "field_3"] }
+
+
+
+Node JS:
+   -  Download node js latest version from an official website
+      (https://nodejs.org/en/download/prebuilt-installer/current)
+   -  Install NodeJS to the system by following the steps on the screen.
+   -  To validate node js and npm isntalled on the system or not we just need to hit 
+      below commands:
+      1. node -v: To check node js version.
+      2. npm -v: to check npm version.
+
+Introduction:
+   -  NodeJS is a platform(server-side) which is built on google chromes javascript v8 
+      engine.
+   -  It is open source, cross platform and is capable of generating real time web 
+      applications.
+   -  It uses event-driven, non-blocking I/O operation model which makes it efficient and 
+      light-weight.
+   -  It is developed by ryan dahl with a team of other developers working at joyent in   
+      2009. Its initial release only supports linux. IT is written in C, C++ and javascript. It's package ecosystem "NPM" is the largest ecosystem of open source libraries in the world.
+
+Brief intro:
+   Node js a runtime environment that allows javascript to run on the server.
+   It is developed by Ryan Dahl and tema in 2009.
+   We can use Node for creating different applications:
+      Real time Web applications.
+      API Servers
+      Microservices
+      IoT Apps
+      Online Chat rooms
+      Gaming applications
+      Streaming platforms
+      etc.
+
+Key Features Of NodeJS:
+   1. Asynchronous and Event Driven:
+      All API's of Node JS library are asynchronous, meaning they are non-blocking.
+      NodeJS never waits for an API to return Data. After calling it node js moves to next API, and a notification mechanism from the events of node js helps server to get responses from previous API call.
+   2. Very Fast:
+      NodeJS built on V8 Javascript engine it makes it very fasst as compare to other technologies.
+   3. Single threaded but highly Scalable:
+      NodeJS uses a single threaded model with event loop.
+      The event mechanism helps the server to respond in a non-blocking way, making it scalable.
+      Unlike traditional servers which create limited threads to handle requests, nodejs uses a single-threaded program that can handle a much larger number of requests.
+   4. No Bufferring:
+      NodeJS applications never buffer any data rather these applications simply output the data in chunks.
+
+NodeJS Core Modules:
+   1. HTTP: This module allows node js to transfer data over Hypertext Transfer Protocol
+      (HTTP). Also we can create server by using this module and to access this module we need to require it.
+      To create Server we need HTTP module along with some required things.
+      Host: We need to mention the HOST, by default it should be localhost to serve data locally.
+      Port: We need to specify on which port we wanted to serve data.
+      createServer(): This method will be available with http module and we can use it to create node server. It will create an instance of an HTTP Server. This method takes a callback and that will be executed every time the server receives a request. The callback has some parameters:
+         req: This param represents the incoming request object, Which contains information about the HTTP request e.g URL, headers, methods, etc...
+         res: This param represents the outgoing  response object which is used to send a response back to the client.
+         res.writeHead(): it is a built in method which is used to send the status code and type.
+         res.end(): IT is also a built in function which is used to tell server that the request has been fulfilled. along with we can also send one response using this.
+      server.listen(): This is an inbuilt function used to bind the port and start listening for incoming connections.
+
+      Send Differnt kind of data through server:
+      1. String: We have seen in the example how we can send String as a response.
+      2. JSON: We need a JSON data to serve as a response. 
+      3. HTML
+      4. PDF
+
+File System:
+   -  Node js gives the functionality of file I/O(Input and Output) by providing wrappers 
+      around standard POSIX(Related to file handling) functions. 
+   -  Using NodeJS we can performed I/O operations in both synchronous and asynchronous 
+      form depending upon the user requirements.
+   -  We need to require fs module as we did for http.
+      e.g const fs = require('fs');
+   -  Different file operations:
+      1. Read(Asynchronous and Synchronous): To read file we need to use readFile   
+         function from fs module. we need to specify path of the file as a 1st parameter to the function and second parameter will be callback function which has error and data parameters. We will get error if fs module failed to read a file or it will get the file data as a second param which is data.
+         syntax: fs.readFile(file_path, callback(error, data) => {});
+         We have fs.readFile() and fs.readFileSync() functions to read file data.
+      2. Write: We can write data of file ccontent to the file using writeFile and   
+         writeFileSync functions.
+         syntax: fs.writeFile(file_path, content, callback);
+         We have fs.writeFile() and fs.writeFileSync() functions to write content to the file.
+         We can add content to the files which are already exists in the system by using 
+         appendFile and appendFileSync functions
+         We have rename and renameSync functions to rename the files.
+      3. Delete: We can delete files by using unlink or unlinkSync functions of fs module.
+         Syntax: fs.unlink(filename, callback)
+   -  Generally We can do Read, Write, Update, Rename and delete files by using fs module.
+
+Errors:
+   -  Errors are any issue that arises unexpectedly and cause our program to not function 
+      properly, or halt the execution.
+   -  As a NodeJS server errors can be any issue which occured runtime or any service 
+      failure.
+   -  An error object in node js does not specify any circustances under which the error 
+      occured but error object does capture a stack tree which details the point in the code where the error was instantiated and may provide error description.
+   -  All errors generated by node js are either instantiated from error class or are 
+      instance of error.
+   -  Properties of errors in node js.
+      1. new Error(message): It is used to create a new error object. it also sets error.
+         message property to the text specified.
+         e.g const error = new Error("This is our error message"); 
+      2. error.messsage: It shows the description of the error. IT is set using new Error
+         (msg) property. Mostly, the "msg" comes in the first line of the error stack trace. If we dont pass any message so the value of error.message will be the actual error set by javascript/NodeJS.
+            e.g //here error.message property is set to the string provided.
+               const err = new Error('This is an error message');
+               console.error(err.message);
+               //Output will be :
+               //This is an error message
+      3. error.code: This is a string label which is used to identify the type os error. 
+         It specifies errors in the form of node js error codes.
+      4. error.stack: It returns a string in which details are provided about where in 
+         the code error was instantiated.
+      5. error.captureStackTrace: This is used to create a .stack property on the target 
+         object which returns the location in the code where Error.captureStackTrace() was called. It returns the data in the form of string.
+      6. error.stackTraceLimit: This property specifies number of stack frames captured 
+         by stack trace. IT can be any valid number however 10 is the default value. If set to non-numeric or negative number, then stack trace will not return any frame.
+   -  Error propagation and interception in NodeJS:
+      -  In node js, we are having several mechanisms for error propagating and handle 
+         those propagated errors while the application is in its running state. 
+      -  The way in which these errors are reported and handled completely depends upon 
+         the type of error and API style.
+         1. Synchronous API: These are those API's which used blocking method that does 
+            not accepts a callback function and uses throw to report errors.
+         2. Asynchronous API: Errors which occures in asynchronous API's can be reported 
+            in multiple ways:
+            1. Errors can be routed to the objects error event if an asynchronous event 
+               is ccalled on an object.
+               e.g. fs.readFile("test.txt", (err) => {
+                  console.error(err);
+               });
+            2. Very few asynchronous methods still se throw to raise exception which can 
+               further handled using try/catch block.(Not recommended)
+   -  NodeJS styled callbacks/Error first callbacks:
+      NodeJS methods follows a idiomatic pattern which is known as NodeJS style callback.
+      Following this pattern, we pass the callback function as an argument to the method. when the execution of the operation is completed or an error is raised then the callback function is called with error object if there exists any error obejct otherwise the first argument is passed a null.
+
+Why we should not use try/catch while handling asynchronous API.
+   We cannot use try/catch mechanism to intercept the errors generated by asynchronous APIs.
+      //Invalid Snippet
+      //An asynchronous operation which will generate error
+      try {
+         async_method('invalid_arguments_generate_error', (err, data) => {
+            if (err) {
+               throw err;
+            }
+         });
+      } catch (err) {
+         console.error(err);
+      }
+      This is a very common mistake with beginners. This will not work because the method is asynchronous. The time by which the callback will be called, surrounding code already completed its execution and exited. Throwing an error inside the callback can leads to the crashing of node js process in most of the cases.
+      
+About Errors:
+In node js applications, mostly all the errors belong to one of the mentioned categories:
+   1. Standard Javascript Errors:
+      <URI> error: This error is thrown when a global URI handling function is misused.
+      <Eval> error: This error is thrown when the call to eval() fails.
+      <Type> error: This is a subclass of error which shows that the argument provides is not of allowed type.
+      e.g. passing an object where string is expected would consider a TypeError.
+      <Range> error: This is a subclass of error which shows that the arguments provided 
+      was not within the range of acceptable values.
+      <Syntax> error: This is a subclass of error which indicates that the code written is not of valid javascript.
+      <Reference> error: This is a subclass of error which signifies that an attempt is made to access a variable which is not defined. These are very common typos or broken code. 
+   2. System errors:
+      This type of errors are generated when the exception occurs during the run time of the program.They are generated when the application violate some constraints of operating system.
+      Properties of System Errors:
+         error.code: This is string which represents an error code. some common examples includes EACCES, EADDRINUSE, ECONNREFUSED, etc.
+         error.port: This is a number which represents the connections port which is unavailable.
+         error.address: It represents the address to which the connection failed.
+         error.path: It represents the relevant invalid pathname.
+         error.syscall: It represents the failed syscall.
+         error.errno: This property can be a number or a string.
+         if number, the value will be negative which corresponds to the error code.
+         if string, it is same as error.code.
+   3. User specified errors: This type of errors are genrated by application code.
+   4. Assertion errors: This type of errors are raised by assert library.
+      This type of errors are special case of errors which occures when an exceptional logic violation is detected in node js that should never occur.
+
+OS Module:
+   -  OS module in node js is used to provide utilities related to operating system. 
+   -  We can access it by requiring os module from node js.
+      e.g. const os = require("os");
+   -  We have different methods to interact with operating system:
+      1. cpus(): This method is used to get the information od all the CPU/Core installed 
+         in the system. This method returns an array.
+      2. arch(): This method is used to return CPU architecture of operating system for 
+         which the node js binary was compiled. 
+      3. endianness()
+      4. freemem(): This method is used to get the amount of free system memory in bytes.
+         This method returns an integer value.
+      5. hostname(): This method is used to get the hostname of the operating system.
+      6. type(): This method is used to get the operating system type or name as returned by Uname.
+      7. and many more...
+
+Cluster module:
+   -  Noramally, node js server runs on a single port and utlizr only single core of the 
+      OS which leads to wastage of hardware capabilities.
+   -  So, in order to take full user of multi core system, we can launch cluster of node 
+      js processes to handle the load. this process is known as clustering.
+   -  Clustering in node js allows us to create different processes which cam share the 
+      same server port.
+   -  We can require cluster module to leverage the features.
+      e.g. const cluster = require('cluster);
+   -  We can create cluster(Master) and worker(Child/Slaves):
+   -  Methods od cluster module:
+      1. worker:
+         -  disconnect/kill(): This method is used to close all servers, it waits for
+            close event on those servers and then disconnects the IPC channel(request/response process), within the worker. 
+         -  exitedAfterDisconnect():  This method returns boolean and the value is set by 
+            calling kill() or disconnect(). By default the value for it would be undefined.
+         -  id(): Each worker has an unique id and this method will return that id.
+         -  isConnected(): This method will return true if the worker is connected to its 
+            master via IPC cahnnel. ot it will be false.
+         -  isDead(): It returns true if the worker process id terminated or dead or it 
+            will be false. 
+         -  process(): This will return global process object.
+         -  send(): This method is used to send a message to a master or a worker.
+      2. cluster:
+         -  disconnect(): This method is used to disconnect all the workers which will 
+            further allow master process to die properly.
+         -  fork(): This method is used to spawn or create a new worker process. 
+         -  isMaster(): It returns true if current process is a master process.
+         -  isWorker(): It returns true if current process is a worker process.
+         -  schedulingPolicy(): This method is used to set the scheduling policy. The 
+            default scheduling policy is round-robin.
+         -  settings(): This method will return an object which contains all the settings 
+            related to the cluster.
+         -  setupMaster(): This method is used to change the default settings of the 
+            master process. and we can see these setting by cluster.settings().
+         -  worker(): This method is a reference to the current worker object. its not 
+            available for master process.
+         -  workers(): This method contains a hash which stores all the active worker 
+            objects. this method will not available with worker processes.
+
+      Distributing incoming connections in cluster:
+      1. round-robin
+      2. sockets
+
+crypto module:
+   -  Crypto module in node js is used to provide cryptographic functionalities. It 
+      includes a set of wrappers for OpenSSL's hash, HMAC, verify, cipher, decipher and sign functions.
+   -  We can use crypto module for 2 purposes:
+   1. Hashing: HAshing is a process of generating a fixed length value from a string 
+      using mathematical functions. It is used for providing security.
+      e.g str = "Pankaj Shimpi"
+         hash = "b95ed0bc44d12e3d6cb2ce8b15e1a41f"
+      Every hash is generated using hashing is:
+      1. Unique: In hashing, for every unique input we will get a unique output.
+         We will get the same output if the input is same no matter how many times we used the same input. And if we slightly change the input the putput got changes to a large extent.
+      2. Fixed length: Hashiing algorithm always generate the hash with the same length. 
+         the length of input does not affect the length of output. 
+      3. Irreversible: Generated hashes are irreversible in nature. We cannot change the 
+         hash to the text input again.
+      Examples of hashing algorithms:
+         1. md5 hashing algo(md5): MD5 stands for message digest 5 is widely used hashing 
+            algo. which produces 128 bit hashes.
+         2. whirlpool hashing algo(whirlpool): It generated 512-bit hash and the input 
+            can be as long as 2^256 bits.
+         3. SHA1 hashing algo(sha1): Secure Hash 1. it is a hash function that generates a hexadecimal number of exactly 40 digits long. And it produces 160-bit hash.
+         4. SHA224 hashing algo(sha224): Secure Hash 224,it produces 224-bit hash.
+         5. SHA256 hashing algo(sha256): Secure Hash 256,it produces 256-bit hash.
+         6. SHA384 hashing algo(sha384): Secure Hash 384,it produces 384-bit hash.
+         7. SHA512 hashing algo(sha512): Secure Hash 512,it produces 512-bit hash.
+         8. ripemd-160 hashing algo(ripemd160): RIPEMD(RACE Integrity Primitives    
+            Evaluation Message Digest) 160 is the improved version of ripemd. It generates 40 digit hexadecimal number.
+      HMAC(Hash Message authentication code): It is a kind of MAC(Message Authentication  
+         Code) which involves performing the hash functions using a secret key.
+         We can create hash using hasing algorithms by Unique, Fixed Length and Irreversible.
+         1. SHA256 HMAC:
+         2. SHA512 HMAC:
+         3. Wirlpool HMAC
+         4. MD5 HMAC
+
+
+   2. Encryption and Decryption:
+      -  In this part, we will learn about doing encryption and decryption using crypto 
+         module. We can do it by using 2 ways, by symmetrically as well as asymmetrically.
+      -  Symmetric or private key encryption: Same key is used to perform encryption and 
+         decryption. It is generally faster than asymmetric.
+         1. createCipheriv: This method is used to convert the text to encrypted form. This method accepts 2 parameters, 1. algorithm and 2. password/key
+         "aes-256-ctr": This is the advance encryption standard we are using for encryption.
+         2. createDecipheriv: This method also accepts 2 parameters same as createCipher.
+         And it decrypts the text back to original form.
+      -  Asymmetric or public key encryption: We need to use pair of keys to perform 
+         encryption and decription. Key which is used to encrypt is differnt from the ley which is used to decrypt. The key pair consists of a public key and a private key. here public key is known to all however private key is only known to the person it belongs. 
+
+         scrypt: This function accepts salt and iterates to generates a unique key.
+         scryptSync: This function accepts salt and iterates to generates a unique key.
+         randomFill: This method will create an specified array with fix number of length and that can be used to generate 'iv'.
+         update: This function is used to update the text format and hash format/type.
+            e.g. hex
+         final: This will finalize the hast type. e.g. hex
+
+
+FYI:
+Decimal numbers:     0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16........
+Hexadecimal numbers: 0 1 2 3 4 5 6 7 8 9 a  b  c  d  e  f  0a 1a 2a.........
+
+
+Form API's using NodeJS:
+   -  API is nothing but a Application Programming Interface and that can help us to 
+      operate on data sources(Datatbse(SQL/PostgreSQL/MongoDB), Files(JSON/Text/Excel), etc), We can call third party libraries to get data from, even we can get the date or files from cloud services(AWS/Azure/Google Cloud, etc)
+   - We can use HTTP methods to interact with data sources by API's.
+      Below are the HTTP methods with their use
+      Create - POST: This method is used to create data to the data source.
+      Read - GET: This method is used to get data to the data source.
+      Update - PUT: This method is used to update data to the data source.
+      Delete - DELETE: This method is used to delete data to the data source.
+
+ExpressJS:
+   -  ExpressJS is a popular web application framework for NodeJS. 
+   -  It provides a robust set of features to develop web and mobile applications.
+   -  Express Simplifies the process of building web servers and API', making it easier 
+      and more efficient to handle various HTTP requests, defines routes and manage middlewares.
+   -  Key Features of ExpressJS:
+      1. Minimal and Flexible
+      2. Routing
+      3. Middleware
+      4. Template engines
+      5. Static File serving 
+      6. Error handling
+      7. Support for RESTFul API's
+      8. Extensible
+   -  To use express module we have to install 'express' npm package and require the same.
+
+Routing in ExpressJS:
+   -  Routing in EcpressJS refers to an application's endpoint(URL) respond to client 
+      requests.
+   -  It is a fundamenta part of any web application, allowing us to define how server 
+      should handle different HTTP methods and URL patterns.
+   -  In ExpressJS, routes are defined using methods correspondings to HTTP verbs, such 
+      as 'GET', 'POST', 'PUT', 'DELETE', etc. Each method takes a path and a callback function that executes when the route is matched.
+   -  syntax:
+      //HTTP GET
+      app.get(path, callback_function);
+      e.g. 
+      app.get('/', (req, res) => {
+         // Code to execute request.
+      })
+   -  To read the body of a POST request in an ExpressJS application, we can use buil in 
+      middleware like express.json() and express.urlencoded() to parse the request body.
+   -  Route Parameter: These are used to capture values embedded in the URL. These 
+      parameters are defined using a colon(:) followed by a variable name. They are used to handle dynamic content based on the URL.
+      We can access Route parameters by using "params" attribute on request object.
+      e.g. 
+         path = api/users/1234
+         route = api/users/:id
+         variable = req.params.id
+   -  Query Parameters: These are used to pass data in the URL after a "?" character. 
+      They are typically used for filtering or searching content. 
+      Query parameters can be accessed via "req.query"
+
+Middlewares in ExpressJS:
+   -  Middleware functions are an essential part of expressjs. They are functions that 
+      execute during the lifecycle of a request to the server. Each middleware function has access to teh request(req) object, response(res) object and the "next" function in the application request-response cycle.
+   -  We can add multiple middleware functions to the requests. and to call next 
+      middleware or business logic we have to call next function. And if we fail to call next then the request will be left hanging.
+   -  Types of middleware functions:
+      1. In-built middleware functions:
+         epress.json(), express.urlencoded(), etc...
+      2. Custom middleware functions:
+         We can create our own middleware function to execute code. 
+         The best example to add a middleware is to validate the request is coming from a valid user(client) or not.
+         We can add multiple middleware to the routes by comma separating those.
+         If we wanted to add a middleware to every route or request we can use ".use" function.
+      3. Error middleware functions: Error handling middleware is a special tye of 
+         middleware that handles errors in our application. Unlike regular middleware, error handling middleware has 4 parameters err, req, res, next.  
+
+
+We are using mongoose library to integrate mongodb with node app. Please check out below link for more information.
+https://mongoosejs.com/docs/guide.html
+
+Database Integration:
+   -  Integrating a database into a node js application is a crucial aspect of building 
+      full-stack applications. 
+   -  We need to follow different steps while connection to database as well as managinf 
+      instance of the database. stpes includes (Connecting database, creating a db session, managing db session and closing the databse session).
+   -  Below is a guide to connect mongodb and performing CRUD operations.
+      1. Connecting Database: We need a mongoose library to be installed to interact with 
+         database and perform their operations.
+      To connect mongodb using mongoose we have to form a database connection string in below format:
+         mongodb://DB_HOST:DB_PORT/DATABASE
+         e.g. 
+         mongodb://localhost:27017/local
+      We have to call a connect method from mongoose and pass the connection string as a first parameter and a options as a 2nd parameter.
+   -  Points to remember:
+      1. install mongoose
+      2. require mongoose
+      3. create connection string
+      4. create schema for collections
+      5. create model on top of schema
+      6. connect database using mongoose.connect() method and connection string as a 
+         parameter.
+      7. Use mongoose methods to operate on database. specificall 
+         save()
+         find() 
+         findById()
+         findByIdAndUpdate()
+         findByIdAndDelete()
+
+Enviorment Variables:
+   -  Using environment variables in node js is essential for managing configuration 
+      settings like database creds, API keys and other environment-specific variables.
+   -  The 'dotenv' package is commonly used to load environment variables from a .env 
+      file into 'process.env'.
+
+
+API Developement:
+   -  API developement is a fundamental part of building scalable web applications, 
+      especially when working with node and express js.
+   -  We have different key concepts and practicces involved in API development.
+      1. Creating REST API: 
+         REST(Representational State Transfer) is widely used architectural style for designing networked applications. 
+         RESTfull API's are built around standard HTTP methods and URLs. 
+      2. Structuring API routes.
+      3. Handling Request validations and sanitization.
+
+Create profile/user
+Authentication(login/logout) and Authorization(Access check):
+   -  These are fundamental concepts in web security, and they play a crucial role in 
+      ensuring that user can only access the resources they are permitted to.
+   -  Authentication: The process of verifying the identity of a user. its about 
+      confirming that the user is who they claim to be.
+   -  Authorization: The process of weather a user has the correct permissions to access a
+      specific resource or perform a specific action.
+   -  Create profile is my creds to enter into the system. e,g i am a student of a school 
+      and i can enter into library.
+   -  Authentication: I have an id card which can be treated as a creds to enter into the 
+      library.
+   -  Authorization: As i am a 10th class student which is my role, so i can access books 
+      that are associated for 10th class role.
+
+
+JWT Tokens: 
+   -  JWT(JSON Web Tokens), it is very popular way to implement secure token-based 
+      authentication in web applications. 
+   -  JWT is a compact, URL safe means of reprsenting claims between 2 parties. These 
+      claims are encoded as a JSON object that is used as a cryptoghraphically signed token.
+   -  In a typical applications, JWT are used to authenticate users adn protect
+      (Authorize) routes from unauthorized access. 
+   -  JWT is composed of 3 parts:
+      Header: It contains metadata about the type of token and the signing alogorithm.
+      Payload: It contains claims or data we want to include in the token. such as user 
+               information.
+      Signature: It ensures the token hasn't been altered. It is created by combining the header, payload and a secret key., the algorithm specified in the header.
+
+Pagination:
+   - Pagination is a common requirement in web applications where large sets of data need 
+      to be presented in smaller, manageable chunks.
+   -  We can achieve pagination by adding skip and limit functions of database.
+
+ReactJS(https://react.dev/learn):
+
+What is React?
+   -  React is a JS library for building a reusable User Interfaces(UI).
+   -  React was released in May 2013, and created by Facebook.
+   -  React is used to build a Single Page Applications(SPA's), Which includes only one 
+      HTML file.
+   -  React allows us to create reuable UI components.
+   -  Reacts latest version is somewhere around 18.x.x.
+
+Why React?
+   -  React is one of the most popular JS library.
+   -  Many developers and comapnies have been using it from the last couple of years.
+   -  Reacts popularity has been growing fast and it has huge community.
+   -  We can user React because of following reasons:
+      -  Fast, Reliable, Modular, flexible, scalable, etc
+      -  Due to Virtual DOM react becomes fast and effiecient to handle updates on the 
+         page. and it will not applied direct of Actual DOM.
+      -  Big community and popularity.
+      -  Open Source
+      -  High Job Opportunities.
+
+Virtual DOM:
+   -  The virtual DOM is a concept used in modern web development frameworks like ReactJS.
+   -  It is lightweigth and efficient abstraction of the real DOM. Alos its a in-memory 
+      representation of the real DOM.
+   -  It improve th performance of the SPA's. and it minimizes the cost which causes by 
+      actual DOM by optimizing the number of updates made to the real DOM.
+   -  The major benefits of virtual DOM are:
+      1. Performance Optimization
+      2. Declarative UI
+      3. Cross-Browser comaptibility
+   -  Virtual DOM is nothing but a copy of a real DOM, An it is designed to improve the 
+      performance by reducing number of direct manipulations on actual DOM.
+
+How does virtual DOM works and why it is beneficial:
+   1. Representaion of the DOM:  IT represents the actual DOM, It mimics the structure of 
+      the real DOM with virtual elements, attributes and nodes.
+   2. Diffing Algorithm:
+      -  When changes occurs in a web application(e.g. user interaction, state updates), 
+         the virtual DOM is updated instead it updates actual DOM.
+      -  React uses a diffing algorithm to compare the previous version of virtaul DOM 
+         with the updated version of virtual DOM. IT happens after any changes happend on the web page.
+      -  The diffing process efficiently identifies the minimal set of changes needed to 
+         be updated the real DOM.
+   3. Batched Updates:
+      -  Rect batches multiple updates together to minimize actual DOM operations.
+      -  Instead of immedietly updating the real DOM for each change, React combines and 
+         optimizes updates before applying then to real DOM.
+   4. Optimized Re-rendering:
+      -  After computing the differences between the old and new virtual DOM, React 
+         updates only the necessary parts of real DOM.
+      -  This targetted approach to updating the DOM reduces unnecessary re-renders and 
+         improves overall performance.
+
+
+Key features of ReactJS:
+   1. Component based architecture.
+   2. Virtual DOM
+   3. Declarative Programming
+   4. JSX(Javascript XML)
+   5. One-way Data Bindind
+   6. Component Lifecycle Methods
+   7. State Management
+   8. Server Side Rendering
+   ett...
+
+JSX:
+   -  JSX stands for Javascript XML and it allows us to write HTML elements with JS code.
+   -  As HTML elements will have opening tags, closing tags, content, attributes, etc, 
+      however some of the elements may not have closing(self closing elements).
+   -  We dont need to use createElement() to create an HTML elements in React, instead we 
+      write JSW code or JSX elements. by whic it is easy to write HTML elements along with JS code using ReactJS.
+   -  We need to use babel.js library to transpile the JSX code to JS because broser will
+      not understand JSX. 
+   -  JSX example.
+      single html JSX element.
+      const jsxElement = <h1>This is my first JSX ELement.</h1>
+      It is a mix of JS and HTML, where we are creating object/variable jsxElement using JS and creating header tag by adding h1. 
+
+JSX Element:
+   -  JSX has HTML and A JS like syntax. JSX elemtns could be a single HTML element or 
+      many HTML element wrapped in a parent element.
+      multipl html jsx element
+   -  const jsxElement = (
+         <header>
+            <h1>Welcome to the react session.</h1>
+            <h2>Getting started with ReactJS.</h2>
+            <h3>Example of JSX elements.</h3>
+         </header>
+      )
+
+To render jsx code on the browser we need following packages with index.html page.
+
+Important CDN links to import babel, React and ReactDOM libraries:
+React: "https://unpkg.com/react@18/umd/react.development.js"
+ReactDOM: "https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+Babel: "https://unpkg.com/@babel/standalone/babel.min.js"
+
+Rendering a JSX Elements:
+   -  To render a JSX element to HTML document, we should first create a HTML file.
+      e.g. index.html file.
+   -  This is the only HTML file we will have in out react application. And thats why we 
+      called react applications as SPA(Single Page Application).
+   -  We can get started with React and JSX by 2 ways:
+      1. Using CDN
+      2. Using npm package called "create-react-app".
+   -  We use create-react-app to create React boilerplate. Boilerplate is nothing but it 
+      has some basic setup of the application, and we can add all the required code on top of the existing setup.
+   -  We will use "create-react-app" throughtout the session but we added CDN too just 
+      for information and understanding how react workes without boilerplate.
+   -  The root div is the gateway to connect all react components to the index.html by 
+      creating root element and adding JSX elements to root element using ReactDOM's render method. 
+   -  In the script tag we will have to add a babel library from CDN and also we will 
+      have a separate script tag containig all the JS code along with jsx element but the type for that script will be "text/babel".
+      Babel will transpile the React JSX code to pure javascript so browser can undersstand and render the changes.
+      We can also add any pure JS, reactjs code, etc inside the script tag. 
+   -  To render a JSX elements we need React and ReactDOM libraries. The ReactDOM 
+      package has render method that will be used to attach JSX elements to root element and render it on the browser.
+      The render method will expect 2 parameters:
+         1. JSX element
+         2. Root element
+   -  To render multiple JSX elements, the best way to render all is by wrapping all 
+      those inside a parent element or putting all of them in array.
+      To add one of the JSX element as a child we have to use "{}", and need to call the name of the JSX element inside brackets.
+
+Note: If we wnated to add a css class to jsx element we need "className" attribute 
+      instead of "class" 
+
+
+Setting up the React Boilerplate:
+   1. Code Editor: VSCode
+   2. Browser: MS Edge
+   3. Environment: NodeJS
+
+NodeJS:
+   -  To run npm packages, to run react application, to write different scipts, etc.
+   -  NodeJS is a runtime environment that allows javascript to run in the server side.
+   -  To Download and install /node js we need to follow few steps mentioned on Node js 
+      official website(https://nodejs.org/en/download/prebuilt-installer/current)
+
+To create a React boilerplate or to start creating react applications we need node to be installed on our machine.
+The react application will start by default on localhost or http://127.0.0.1, and on the port 3000.
+"create-react-app" npm package can configure a node server for the react application.
+
+create-react-app:
+   -  This is nothing but a npm package that creates a boilerplate for React applications.
+   -  To install create-react-app package on machine we need to run following commands:
+      1. npm install create-react-app
+      2. npx create-react-app project-name
+
+React-Boilerplate: This will create all the required files and folders, and will start creating react application, after that we can expand this by adding diiferent files, components, utilities, etc to the boilerplate.
+
+To start React application to verify either we get everything, we have to run command:
+we need to navigate to the directory first and then run below command
+   "npm start"
+
+In the React boilerplate there are some folders and files were added/created by default:
+Folders:
+   1. node_modules: It stores all necessary node packages of the current project.
+   2. public: public folder will contains different files that can be accessed in other 
+      files or folders.
+   3. src: src will contain all the source code of the React application.
+
+Files:
+   package.json: This file contains all the information about the application and also has
+      Scripts, detailed information, required package details, etc. 
+   .gitignore: React boilerplate comes with git initiated., the .gitignore allows files 
+      and folders not to be pushed on the github.
+   README.md: Its amarkdown file to write application documentation.
+   package.lock.json: It means to lock the version of the packages.
+   
+   public/index.html: As React supports SPA(Single Page Application), the index.html is 
+      the only HTML file we have in the entire application.
+   public/favicon.ico: an icon file for react.
+   public/manifest.json: It is used to make the application a progressive web app.
+   public/images: Open graph images(These are the images which are visible when a link 
+      shared on social media).
+   public/robots.txt: This is an information file, if the website allows web scraping.
+
+   src/app.css and src/index.css: These are root css files for styling react application. 
+   src/index.js: It is a file that allows to connect all the components with index.html.
+   src/app.js: It is a file where we usally import most of the presentational components.
+   src/logo_file: This is a React logo file.
+   src/reportWebVitals.js: This is used to add progressive web app features.
+   setupTests.js: To write test cases for an application.
+
+React Project Folder Structure and file naming(Best practices):
+   -  There is no strict way to use single folder structure or file naming in react.
+   -  Mostly these kind of decisions made by the team and companies.
+   -  Sometimes a company may have a developed guildlines about what coding conventions, 
+      folder structures, file naming to follow throughout the development lifecycle.
+   -  There is no right or wrong way of structuring react application/project but some 
+      structures are better than the others for scalability, maintainability, ease of working on files and easy to understand the project structure.
+
+File Naming:
+   - The name of files should be in camelCase e.g employeeDetails, personDetails, navbar, 
+      etc.
+   -  Mostly file names should be descriptive.
+
+Folders:
+   -  We can put all images, icons and fonts in public folder. 
+   -  We can create different folders for different components based on the current 
+      features.
+      e.g src ->
+         components -> 
+         order(This folder will contain components whic are specific to orders and it can also have a nested folder which comes under orders)
+         users(user management related components. e.g. create user, login/logout, etc.)
+         inventory(inventory related components or nested folders.)
+
+
+Components:
+   -  Components are the building blocks of React. It allows developers to create small, 
+      reusable and modular UI elements.
+   -  It is responsible for one of the small piece or a container or a parent of an 
+      web application.
+   -  It is also refers as an aggregations of multiple components.
+   -  React helps us to assemple or collects different components to create a web page.
+   -  Mostly we use javascript functions or classes to create react components.
+   -  Components can be created and added to other components as a HTML kind of 
+      definition.
+   -  Components can be functional or class-based.
+   -  Components can be:
+      Functional components/Presentation Components/Stateless Components/Dumb Components.
+      Class Components     /Container Components   /Statefull Components/Smart Components
+
+Functional Component:
+   -  We can create functional components using JS functions.
+   -  These are mostly a presentational/informative components.
+   -  To ceate and render these we need to import react in every component.
+   -  Also we have to return jsx out of functional components to show them on UI.
+   -  Syntax:
+      function comp_name(props) {
+         return (
+            <div>
+               // Code for component.
+            </div>
+         )
+      }
+      const comp_name = (props) => {
+         return (
+            <div>
+               // Code for component.
+            </div>
+         )
+      }
+
+
+Props:
+   -  Props are used to transfer data from one component to another.
+   -  Props can be passed same like we are passing or adding attributes to the HTML 
+      elements.
+   -  Props is a special keyword in react that stands for properties and it is being used 
+      to transfer data from one component to another.
+   -  To pass data or properties from one component to another is nothing but passing it 
+      from parent component to child component.
+   -  ParentComponent(A) --> {...data}(props) --> ChildComponent(B)(props.data).
+   -  Props are mostly like parameters with functions but props are smarter that they can 
+      take dynamic data.
+   -  We can pass props from parent component inside the curly brackets with the name of 
+      the property and can be accessed by using props keyword inside the child component.
+   -  The data type of the props we pass as an attribute to the component is:
+      1. String
+      2. Number
+      3. Boolean
+      4. Objects
+      5. Arrays
+      6. Functions
+   -  We can destruct all the props in child components.
+
+Class Components:
+   -  Class based components can have state(Component State)
+   -  Class based components can have lifecycle hooks(Methods).
+   -  These componenta are made of JS classes and inherits from React Component.
+   -  We can access props as well inside class based components, and we do it by using 
+      this keyword. e.g. this.props.
+   -  We have to use or create render() inside class components to render the JSX 
+      elements. render() methos is mandatory in every class components.
+   -  We mostly see class based components are widely used in older codebases and 
+      understanding them is essential for maintaining and udnerstanding legacy React applications.
+   -  Syntax:
+      class compo_name {
+         constructor() {
+
+         }
+         // Code goes here.
+         render() {
+            return JSX from here...
+         }
+      }
+      By inheriting React Component
+      class compo_name extends React.Component {
+         constructor(props) {
+            super(props);
+         }
+         // Code goes here
+         render() {
+            return JSX from here...
+         }
+      }
+
+Component State:
+   -  Class components are having state and it is a key feature of a class components.
+   -  The english meaning of state is the particular condition that someone or something
+      is in at a specific time.
+   -  State is nothing but a object that lets the component re-render when the state data 
+      changes.
+   -  We can set state to class components in constructor or outside the constructor. but 
+      it should be part of the class.
+   -  The important thing here is we cannot directly update or change the component state
+      instead we have to use React's "setState()" method to update the state data.
+   -  Class components can hold and manage their own local state, which is an object taht 
+      determines how the component renders and behaves.
+
+Conditional Rendering:
+   -  Conditional rendering is a way to render different JSX or components at a different 
+      condition.
+   -  We can implement conditional rendering using regular if and else, ternary operator 
+      and "&&".
+   -  Syntax:
+      if-else:
+         let jsx = null;
+         if(condition) {
+            jsx = <h1>Heading</h1>
+         } else {
+            jsx = <li>Text</li>
+         }
+         <div>{jsx}</div>
+
+      ternary operator:
+      (condition) ? <h1>Heading</h1> : <li>Text</li>
+
+      &&:
+      {(condition) && jsx code or component}
+
+State vs Props in React:
+   -  State and props are essential concepts for managing data and behaviour within 
+      components.
+   -  They serve different purposes, but both are crucial for rendering the UI 
+      controlling and behaviour of components.
+
+   -  Characteristics of State:
+      Mutable: State can be changes using "setState" method in class componenets or    
+      useState hook in functional component.
+      Private to the component: State is owned by the component that defines it and is not accessible to other components.
+      Triggers Re-renders: When the state of a component changes, React ren-renders the component and updates the UI accordingly.
+      Initialization: State is initailized in the constructor(for class components) or using "useState"(for functional components).
+
+   - Characteristics of Props:
+      Immutable: Props cannot be modified by the component receiving them. They are read-only for the components where props are used.
+      Passed from Parent to Child: Props are passed down from parent component to child component and cannot be modified by the child component.
+      Does Not trigger Re-renders: While props thenselves do not re-renders, Wwhen  parent component re-renders and passes new props, the cild component will re-render with new Props.
+      Used for Configuring Components: Props allows us to customizr and configure components where they are used.
+
+When to use State and Props:
+   -  State:
+      -  When we need to store and manage local data that may change over time.
+      -  When we need to respond to user inputs, fetch data from an API, or handel other 
+         events that may require dynamic updates to the UI.
+   -  Props:
+      -  When we need to pass data from a parent component to a child component.
+      -  When we want to make our component configurable and reusable by allowing the 
+         parent control whet it displays or how it behaves.
+      -  When we are passing functions or event handlers to child components.
+
+
+React Forms:
+   -  Form is used to collect data from users. Once in a while we use forms to fill our 
+      information on a paper or on a web page.
+   -  Mostly we fill forms for sign up, sign in, or to apply jobs.
+   -  We fill different form fields to submit our information into the system.
+   -  We encounter different form fields when we fill a forn such as simple text, 
+      textarea, email, password, mobile number, birthdats, checkbox, radio buttons, etc..
+   -  Forms will get 2 types components:
+      1. Controlled:
+         Controlled components are those where form data is handled by the React component
+         state.  It means REact component takes control of the input values.
+         Characteristics:
+            The form element's value us set by the component state.
+            Changes to the form element's value triggers and event which then updates the state.
+            The component fully controls the input an the current value is always availble in component state.
+         We can easuly implement input validation, conditional enabl/disable submit button, etc
+      2. Uncontrolled:
+         These components are those where form data is handles by the DOM itself, instead controlled by state.
+         We can directly access the values from DOM using "ref".
+         These components are mostly used when integrating third-party libraries.
+         These are somtimes more efficient because of less re-rendering.
+         Characteristics:
+            The form elements vaue is stored in the DOM, not in state.
+            We can access the value using a "ref" when we need it.
+         While creating uncontrolled components, we have to create reference for every field which we are adding inside the UI. to add reference we use "React.createRef()".
+         Then on UI element we are mapping the value with ref attribute.
+         While capturing or getting those values we have to use the same field and extract the current value out the reference.
+         e.g. this.field.current.value;
+
+React Event:
+   -  An event is an action or occurance recognised by a web page.
+   -  To make an event more clear lets use the daily activities we do when we use 
+      computer such as:
+      Mouse Event: Scroll(onScroll), click(onClick), double click(onDoubleClick), right click(onRightClick)
+      Keyboard Events:(onKeyDown)
+      Hover on image or text or any HTML elements: onHover
+      General: onCopy, onBlur
+   -  Handling event in React is almost similar handling events on DOM elememts using JS.
+   -  Key Points:
+      React event names always in camel case rather lowercase. e.g onClick instead onclick
+      With JSX we can pass function as the event handler instead of string.
+   -  We will have some of the following events in general and those are used widely in 
+      almost every web application:
+         -  onClick
+         -  onChange
+         -  onBlur
+         -  onMouseMove, onMouseEnter, onMouseLeave
+         -  onKeyDown, onKeyUp
+         -  onCopy
+         -  and more.... 
+
+   Note: We have a onSubmit event on form, Which will be triggered once we submit the form. and for that we should have a submit button inside the form.
+   To trigger onSubmit we should have a button with type submit inside the form.
+   e.g,
+   <form onSubmit={handler}>
+      <button type="submit">Submit/Any Value</button>
+   </form>
+
+Note:
+   Before arrow functions we need to bind this to all the event handlers inside the constructor as this is pointing to the callee when the handler is triggered which is from the jsx code and inside handler function this is pointing to event instance.
+
+   Now we have arrow fucntions so we dont have to worry about binding this to event handlers.
+
+Component Lifecycle Hooks(Methods):
+   -  Component lifecycle is the process of mounting(create), updating and unmounting
+      (destroy) a component in react applications.
+   -  We can associate a component lifecycle with humaan growth:
+      -  Birth(Mounting)
+      -  Adult(Updating)
+      -  Death(Unmounting) 
+   -  Each phase has several methods that defines the component state at a specific time.
+
+   Mounting Phase:
+   Renderig or putting a React component into a DOM is called a Mounting.
+   The following built-in methods run in the given order during mounting of a Component.
+      1. constructor: This is called when a component first initiated. This is the very 
+         first method in component lifecycle that is executed. This is the place where we initialize state and bind the event handlers.
+      2. static getDerivedStateFromProps: This is a static method that invoked right 
+         before calling the render method and after constructor. 
+         This is used to update the state based on the changes on props.
+         This method has 2 parameters
+         1. Props 2. State
+      3. render: This method is responsible to render the JSX code on UI.
+         This method will be called every time the component is re-rendered.
+         IT describes the UI elements to be displayed, and it returns JSX to render th component.
+         This method should not call this.setState(), if we do the component will go into infinite loop. 
+      4. componentDidMount: This method is called after the component is mounted and 
+         rendered on UI.
+         This is the good place to perform initial setup that requires DOM nodes, like data fetching. and also its a good place to call an API's from the react component.
+         This method is called immediately after the component is mounted(inserted into the DOM).
+         IT performs side effects like fetching data, setting up subscriptions or DOM manipulations.
+   Updating Phase:
+      -  Updating and re-rendering of the component happens in this phase.
+      1. static getDerivedStateFromProps: As methioned earlier, this method is also    
+         called in update phase to update the state based on the props change.
+      2. shouldComponentUpdate: This method is called rigth before render method, when a 
+         new props or state are received.
+         It allows we to control weather the component should re-render or not based on the changes hanppened on state or props.
+         As a result of identifying either we need re-render or not we have to return bollen value true or false. if we returned true the component gets re-render. and if this function returns false the re-render propcess pauses and contnues to next proccess.
+         This method is havin 2 parameters:
+            1. nextProps, 2. nextState
+      3. render: To re-render the component on UI.
+      4. getSnapshotBeforeUpdate: This is called right before the most rencent render 
+         output is committed to DOM. It allows us to capture some information(like scropll position) before the DOM update happens.
+         This method will have 2 params:
+         1. prevProps, 2. prevState
+      5. componentDidUpdate: This method is called aftre the component is updated in DOM.
+         Its useful for performing side effects when props and state changes.
+         This method will have 3 params:
+         1. prevProps, 2. prevState, 3. snapshot
+   Unmounting Phase:
+      1. componentWillUnmount: This method is called immedietly before a component is 
+         removed or unmounted from the DOM.
+         This method mostly used for clean up any timers, subscriptions or other resources.
+
+APT Integrations:
+   -  We have 2 different ways to integrate or call an API throught react applications:
+      1. Javascripts inbuilt fetch method.
+      2. axios library
+   -  API integration in React refers to the proces of connecting a react application  
+      with external APIs to retrieve or send data.
+
+   1. Fetch API:
+      -  The fetch API is built-in JS interface to make an HTTP requests(API calls.)
+      -  IT provides modern and flexible way to perform network request in web browsers 
+         and nodejs.
+   
+   2. Axios:
+      -  Axios is a very polpular, promise-based HTTP client for making HTTP requests in  
+         JS. especially in NodeJS and browser environments.
+      -  This Library is widely used for web development and for performing CRUD 
+         operations via API requests. 
+      - Key Features:
+         1. Promise-based.
+         2. It supports multiple request types.
+         3. We can use axios on client and server side.
+         4. It supports request and response modifications/transformations
+         5. Automatic JSON data parsing
+         6. Intercepts requests and responses
+         7. Request Cancellation
+         8. Error Handling
+
+CORS(Cross-Origin Resource Sharing):
+   -  It is a mechanism that allows restricted resources on a web page to be requested 
+      from another domain outside the domain from which resouce originated.
+   -  In a typical web application setup, CORS is used to bypass the "Same-Origin Policy" 
+      which prevents javascript code running on a page from making requests to a different domain.
+
+Why we need CORS:
+   -  By default web browsers prevent cross-origin HTTP requests, for eg. we might have 
+      client application(frontend) running on http://localhost:3000,  and the backend server is running on http://localhost:4001. Browsers will block requests from localhost:3000 to localhost:4001 unless server allows such requests via cors.
+   -  We can enable cors by using npm package called cors middleware package. 
+
+Steps to add CORS:
+   -  Install cors package by npm install cors
+   -  Do a basic setup by importing cirs middleware.
+   -  Enable cors for specific domains.
+   -  We can also enable cors for specific HTTP methods as well
+   -  We can have more cors configs that can help us to execute cors at a specific ranges 
+      of requests.
+      More config options:
+         allowHeaders: It specifies which headers are allowed in requests.
+         credentials: Weather to include cookies or HTTP authentication in cross-origin requests.
+         exposedHeaders: It exposes addition response headers.
+         maxAge: How long the resuts can be cached 
+
+React Hooks:
+   -  React hooks are a special addition to react js and it is introduces from version 
+      16.8. It allows React features, such as lifecycle methods and state in functional components.
+   -  By using this it enables cleaner code, more reusable and making it easy to manage 
+      state, side effects(Lifecycle methods) and other React functionality withoud adding class components.
+   -  If we use hooks we can have only functionals components throughout the react app.
+   -  A hook is a special function that lets us "Hook into" react features.
+   -  We have several hooks functions in react that we can use to create state, implement 
+      lifecycle methods, manage application state, etc.
+      1. useState: To create state in functional component.
+         syntax:
+         const [state, setState] = useState(initialValue)
+         state: The current state value.
+         setState: A function to update state value.
+         initialValue: The initial value of state.
+      2. useEffect: To implement lifecycle methods,
+         The useEffect hook let us perform side effects(e.g data fetching, subscriptions, manual DOM manipulations, etc) in function components.
+         It serves the same purpose as componentDidMount, componentWillUpdate and componentWillUnmount lifecycle methods combined.
+         syntax: 
+         useEffect(() => {
+            // Code to run on mounting/updating phase.
+            return () => {
+               // Optional: Code to run on unmounting phase.
+            }
+         }, [dependencies]);
+         dependencies: Its an array of values that the effect depends on.
+         If ommited the function will run on every render.
+         If array is an empty it only runs on mount and unmount
+      3. useContext: To have an app state(where data can be shared between different 
+         components).
+      4. useReducer: The useReducer in React is an alternative to useState for managing 
+         state especially when stae logic is complex or when next state depends on the previous one. And we user the concept of reducers, which is similar to redux reducers.
+         syntax:
+            const [state, dispatch] = useReducer(reducer, initialState);
+         reducer: A function that takes the current state and an action, and it will 
+            return the new state.
+         initialState: The intial value of the state
+         dispatch: A function to send actions to the reducer.
+
+
+Redux:
+   -  Redux is a library that allows us to create state for application and use that 
+      state to different components. 
+   -  Redux is a predictable state container for Javascript applications.
+   -  Redux can be used with any frontend technologies like ReactJS, AngularJS, VueJS, 
+      etc.
+   -  To use redux in react applications we need to isntall 2 packages:
+      1. redux
+      2. react-redux
+   -  Redux is commonly used with react to manage a state of an application in 
+      centralized store.
+   -  Redux has provider that adds a store to the application and wraps it into.
+   -  Redux has actions that are dispatched to update the store.
+   -  Reducers are the pure functions that handles state(store) change. 
+   -  Pillars of Redux:
+      1. Store:
+         The store holds the entire state is an application. It is a simple javascript object that represents the state tree.
+         Ther state within store is read-only, and the changes are made by dispatching actions.
+      2. Actions:
+         Actions are plain JS objects that describes changes ain the application state.
+         They are dispatched to the store, and they must have type property and this property indicating the type of action.
+         Actions can have additional data property that has exact value which can be updated to the store. 
+      3. Reducers:
+         Reducers are pure functions that specifies how the application state changes in response to the action.
+         The can take the current state and an action as argument. and they returns the new state without modifying the existing one.
+         Reducers can be combined to form a overall state management logic.
+
+   Connect method:
+      -  The connect method is provided by react-redux package to connect a react 
+         component to redux store.
+      -  It allows components to access state from redux store and dispatch actions.
+      -  The connect method takes 2 impo parameters:
+         1. mapStateToProps: It is a function that maps the redux state to the components props. It defines which part of the redux state should be available to the connected components.
+         2. mapDispatchToProps: It is a function or an object that defines the action creators which will be available to the connected components.
+         It allows components to dispatch action without directly referencing to redux store.
+
+   Provider:
+      -  The provider is a component provided by react-redux package.
+      -  It servers a wrapper around the react application, allowing the redux store to 
+         be accessible to all react components.
+      -  The provider component takes a store as a prop, which is the redux store we have 
+         created for the application.
+
+useContext:
+   -  The useContext hoos in react provides an easy way to access and share data globally 
+      across components without having to pass props down manually at each level.
+   -  It allows us to use react context API more efficiently, which can be helpful for 
+      managing state and data sharing between deeply nested components.
+   -  It is designed to share values(such as state, data, functions, etc) between 
+      components without props. It is and ideal for things like user authentication, theming or global data. 
+   -  By using useContext we can avoid prop drilling.
+   -  How useContext works:
+      We need to follo some steps to implement useContext.
+      1. Create a Context: Using React.createContext(), we can create a context object 
+         that will hold the shared data.
+         React context is often used when data needs to be accessible by many components, e.g. user information, themes..
+      2. Provide the context: Use a provider component to pass the context value down to 
+         children components.
+         The provider component allows consuming componentsn
+      3. Consume the context: In the child components, use the useContext hook to consume the context data.
+   -  Limitations of useContext:
+      1. Re-rendering: Any changes happens on context value triggers re-rendering in all 
+         consuming components, which can impact performance.
+      2. No a state management solution: Context is not a replacement for more robust 
+         state management libraries like redux in complex applications.
+
+React Routing:
+   -  React router is a powerful library that helps in building single page applications 
+      by managing routes and navigating between views(Components) within a react application.
+   -  In trditional multi-page applications each url request corresponds to a new page. 
+      However, in a SPA like react app, the pages does not reload as we navigate between different views(components). instead, routing is handled on the client side using JS.
+   -  React router provides a declarative way to define routes and navigate between 
+      different components, allowing for the creation of a multi-view app that behaves like a traditional website.
+   -  To implement routing in react we need to install 'react-router-dom' pckg from npm.
+      npm install react-router-dom
+   -  React router has different components:
+      1. BrowserRouter
+      2. Route
+      3. Navlink
+      4. Nested routes
+
+
+1. BrowserRouter:
+   -  This is a parent component which allows to wrap the application routes.
+   -  Using browserrouter we can access the browser history.
+   -  Sometimes we renamed this to Router.
+
+2. Route:
+   -  The route component allows us to navigate between components.
+   -  The route component requires 2 params:
+      1. path: The path pro is where the component has to be rendered.
+      2. component: The component prop is which component has to be rendered for    
+         specified path.
+
+3. Navlink:
+   -  The navlink component allows us to navigate each component.
+   -  It takes "to" prop.
+   -  The navlink is a component on top of anchor tag  and clicking on navlink does not 
+      refresh the page. which is the best qulity of using router.
+   -  Route and navlink will work perfectly as ling as route is found in basic 
+      configurations.
+
+4. Nested routing:
+   -  The nested routing help us to route from one route to another with parent child 
+      routes.
+   -  <Outlet> is nothing but a placeholder in the parent component where the child 
+      component will be rebdered
+
+Why Use React Router:
+   -  Change views without page reloads.
+   -  Handle deep linking. 
+   -  Managing route parameters.
+   -  Implement protected routes.
+   -  Perform programatic navigation.

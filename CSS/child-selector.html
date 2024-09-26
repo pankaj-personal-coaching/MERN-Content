@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector</title>
+    <style>
+      div > p {
+        background-color: burlywood;
+      }
+
+      div ~ p {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Child Selector</h1>
+    <p>Root: This is the root level paragraph</p>
+    <div>
+      <p>Root:div: This is inside the div tag - 1</p>
+      <section>
+        <p>Root:div:section This paragraph sets into div->section->p</p>
+      </section>
+      <p>Root:div: This is inside the div tag - 2</p>
+    </div>
+    <p>Root: This paragraph will be the Sibling for div - 1</p>
+    <p>Root: This paragraph will be the Sibling for div - 2</p>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector</title>
+    <style>
+      div + p {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Adjacent selector</h1>
+    <p>Root: This is the root level paragraph</p>
+    <div>
+      <p>Root:div: This is inside the div tag - 1</p>
+      <div></div>
+      <p>This is nested but right next to inner div</p>
+      <p>Root:div: This is inside the div tag - 2</p>
+    </div>
+    <!-- <span>This text can be ignored</span> -->
+    <p>This is rigth after div - 1</p>
+    <p>Root: This paragraph will be the Sibling for div - 1</p>
+
+    <div>
+      <p>Root: This paragraph will be the Sibling for div - 2</p>
+    </div>
+    <p>This is rigth after div - 2</p>
+    <p>This is 2nd next to the div</p>
+  </body>
+</html>
